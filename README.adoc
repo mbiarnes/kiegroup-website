@@ -1,7 +1,6 @@
-= KIE Website Testing
+= KIE Website 
 
-This is a playground which will eventually go away.
-We're testing the new kie.org website here.
+Source files for https://www.kie.org[kie.org].
 
 == Working on the site
 
@@ -12,3 +11,6 @@ We're testing the new kie.org website here.
 . To work and continuously watch files: `yarn start`
 .. The site will be available at http://localhost:8820/
 
+== License
+
+KIE Group website is released under [Apache License 2.0](LICENSE-Apache-2.0.txt).
