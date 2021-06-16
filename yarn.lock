@@ -867,44 +867,6 @@
     "@babel/helper-validator-identifier" "^7.14.0"
     to-fast-properties "^2.0.0"
 
-"@patternfly/pfe-accordion@^1.6.0":
-  version "1.7.0"
-  resolved "https://registry.yarnpkg.com/@patternfly/pfe-accordion/-/pfe-accordion-1.7.0.tgz#61bfb72edf3e6036d76cb6dae0eb53523264cbd6"
-  integrity sha512-QLnpILo94brFLIlM4nWCmYChdV0pUZWkNjPlxAEHLKAxpiHGysQ0GOsP+uZwQJYBwUm/5pjVzX9QYTsnDL61fQ==
-  dependencies:
-    "@patternfly/pfelement" "^1.7.0"
-
-"@patternfly/pfe-band@^1.6.0":
-  version "1.7.0"
-  resolved "https://registry.yarnpkg.com/@patternfly/pfe-band/-/pfe-band-1.7.0.tgz#474d89d18d8011fa8f099ad5e2d8318e0fe901e1"
-  integrity sha512-W8VLq/3lxFGNQKktnp/apmO6vksk3VcEo6ii5Kp/KkriindbiDZXDNhqExU//x61TwtlVozl30cR3HqbeuV+8A==
-  dependencies:
-    "@patternfly/pfelement" "^1.7.0"
-
-"@patternfly/pfe-card@^1.6.0":
-  version "1.7.0"
-  resolved "https://registry.yarnpkg.com/@patternfly/pfe-card/-/pfe-card-1.7.0.tgz#0c52a38d226e037d92025f0337471a98b2fb768f"
-  integrity sha512-cE426+mtSQ7DfEYxJl/5IoGfNz5QdLiBIMGHpbRM0j+QYcR1DYdW1QTiBLNISN35dCCxn2e4Wj7o/RevgNp0TQ==
-  dependencies:
-    "@patternfly/pfelement" "^1.7.0"
-
-"@patternfly/pfe-cta@^1.6.0":
-  version "1.7.0"
-  resolved "https://registry.yarnpkg.com/@patternfly/pfe-cta/-/pfe-cta-1.7.0.tgz#b19312b11aa1866859325b1e021b67878ae860e5"
-  integrity sha512-PXMJa4JRHx+mNybdTzwlx61ebkjs3+zgEEQEByuBNap30/O8fWBlyAO0Gsq8qLLNVUir+42xI630hklsNeqURQ==
-  dependencies:
-    "@patternfly/pfelement" "^1.7.0"
-
-"@patternfly/pfe-styles@^1.7.0":
-  version "1.7.0"
-  resolved "https://registry.yarnpkg.com/@patternfly/pfe-styles/-/pfe-styles-1.7.0.tgz#f022bac500040cd567dd0e5f964416a73605be12"
-  integrity sha512-XiJwza+skMA4ua4h9wgpu0igijUt8Wv5rPa0aBNG6p5qveiwmo0vPvvytqBqncT7BOdfDeW124rUEFuZpsHckg==
-
-"@patternfly/pfelement@^1.7.0":
-  version "1.7.0"
-  resolved "https://registry.yarnpkg.com/@patternfly/pfelement/-/pfelement-1.7.0.tgz#54cbe63aed9f8a891ac28cea35d4442f447d9086"
-  integrity sha512-v6M2sPqw5sXTV+tL2bp5plpd2uuZ29Z4CTGd952z7scUDGHQJBaqzafbnEZIoOS/nuJsPjjE6U+1aUCYEpar8Q==
-
 "@types/json-schema@^7.0.5", "@types/json-schema@^7.0.6":
   version "7.0.7"
   resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.7.tgz#98a993516c859eb0d5c4c8f098317a9ea68db9ad"
