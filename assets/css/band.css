@@ -1,0 +1,26 @@
+.container--band {
+    display: flex;
+    margin: 0 auto;
+    grid-column: 1/end;
+    flex-wrap: wrap;
+}
+
+.container--band-2-col {
+    display: inline-flex;
+    flex-wrap: wrap-reverse;
+}
+
+.container--band-about-intro {
+    max-width: 75%;
+    text-align: center;
+}
+
+.container--band-team {
+    display: grid;
+    /* Partially responsive fallback */
+    /*grid-template-columns: repeat(auto-fill, minmax(calc(10% + 7.5rem), 1fr));*/
+
+    /* Fully responsive version */
+    grid-template-columns: repeat(auto-fill, minmax(min(10rem, 100%), 1fr));
+    grid-gap: 1rem;
+}

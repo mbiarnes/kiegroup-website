@@ -1,0 +1,14 @@
+= KIE Website Testing
+
+This is a playground which will eventually go away.
+We're testing the new kie.org website here.
+
+== Working on the site
+
+. Download and install a version of Java 8+
+. Download and install a recent version node and npm
+. Execute `yarn install`
+. To build the site: `yarn build`
+. To work and continuously watch files: `yarn start`
+.. The site will be available at http://localhost:8820/
+

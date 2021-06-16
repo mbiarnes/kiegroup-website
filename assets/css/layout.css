@@ -1,0 +1,71 @@
+@import "band.css";
+
+.container--main {
+    padding: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(calc(10% + 7.5rem), 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(min(10rem, 100%), 1fr));
+    display: grid;
+    grid-gap: 2rem;
+}
+
+.container--main-video {
+    display: unset !important;
+}
+
+
+/* Footer starts */
+
+.container,
+footer {
+    position: relative;
+}
+
+.wrapper,
+footer .row {
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+}
+
+.row.row-wrap {
+    flex-wrap: wrap;
+}
+
+.row.row-top {
+    align-items: flex-start;
+}
+
+.row.row-bottom {
+    align-items: flex-end;
+}
+
+.row.row-center {
+    align-items: center;
+}
+
+.row.row-stretch {
+    align-items: stretch;
+}
+
+.row.row-baseline {
+    align-items: baseline;
+}
+
+.row .column {
+    display: block;
+    flex: 1 1 auto;
+    margin-left: 0;
+    max-width: 100%;
+    width: 100%;
+}
+
+.row .column iframe {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}

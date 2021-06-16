@@ -1,0 +1,196 @@
+#
+# All members on the wider KIE Team
+# Structure is as follows:
+#  name: Jason Porter
+#  org: Evangelism
+#  img: https://secure.gravatar.com/avatar/c4ffa13c27fbb20c8404bd296e274007
+#  twitter: https://twitter.com/lightguardjp
+#  linkedin: https://www.linkedin.com/in/jasonporter/
+#  github: https://github.com/LightGuard/
+#
+- name: Geoffrey De Smet
+  img: https://secure.gravatar.com/avatar/27147a6679a4bfb6461ff1c0ae10473e
+  twitter: https://twitter.com/GeoffreyDeSmet
+  linkedin: https://www.linkedin.com/in/ge0ffrey
+  github: https://github.com/ge0ffrey
+
+- name: Lukáš Petrovický
+  img: https://secure.gravatar.com/avatar/c950743f532471ac34022e92193563c3
+  github: https://github.com/triceo
+
+- name: Jiří Vahala
+  img: https://secure.gravatar.com/avatar/1ad0d21dbd341c743c374e057e2930f1
+  github: https://github.com/snurkabill
+
+- name: Jiří Locker
+  img: https://secure.gravatar.com/avatar/c4e5f1a35064cb21de3b3e4bf5bd7ae8
+  github: https://github.com/yurloc
+
+- name: Radovan Synek
+  img: https://secure.gravatar.com/avatar/f1b0cd1c06b5697dbc91f02ea00f3090
+  github: https://github.com/rsynek
+
+- name: Anna Dupliak
+  img: https://secure.gravatar.com/avatar/54cd5de3bdaf21a942e8d9d5fe95f647
+  twitter: https://twitter.com/dupliaka
+
+- name: Michal Tomčo
+  img: https://secure.gravatar.com/avatar/ac8d5ec97e225c049fae098f640250c7
+  github: https://github.com/michaltomco
+
+- name: Duncan Doyle
+  img: https://secure.gravatar.com/avatar/6d3eaffeaf61a8f3ea86c2d0b701bc2d
+  twitter: https://twitter.com/DuncanDoyle
+  github: https://github.com/DuncanDoyle
+
+- name: Karina Varela
+  img: https://secure.gravatar.com/avatar/8a9897be8e52ae54f8f4b57e0b868829
+  twitter: https://twitter.com/kvarel4
+  github: https://github.com/kmacedovarela
+  linkedin: https://www.linkedin.com/in/kmacedovarela
+
+- name: Ivo Bek
+  img: https://secure.gravatar.com/avatar/6228ff5e6c6a7e64e364b5c494e5b4dc
+  github: https://github.com/ibek
+
+- name: Sam Van Malderen
+  img: https://secure.gravatar.com/avatar/ff1d2abc4474045c8cad7c95975eda63
+  github: https://github.com/elsam
+  contributionsDescription: Genetic algorithms prototype
+
+- name: Frederic Hornain
+  img: https://secure.gravatar.com/avatar/8eb1897dda40d25fd65697872e4a8480
+  twitter: https://twitter.com/fhornain
+  github: https://github.com/fhornain
+  contributionsDescription: Example improvements (code and images)
+
+- name: Matej Čimbora
+  img: https://secure.gravatar.com/avatar/b423d5e811dc7d6f003944b2d31df407
+  github: https://github.com/mcimbora
+  contributionsDescription: BenchmarkAggregator and more
+
+- name: Ondrej Škopek
+  img: https://secure.gravatar.com/avatar/fa169c92202fdd8203f45daa96e69933
+  twitter: https://twitter.com/oskopek
+  github: https://github.com/oskopek
+  contributionsDescription: OptaPlanner Benchmarker improvements
+
+- name: Mark Proctor
+  img: https://secure.gravatar.com/avatar/461df23df429c87550d3ce25c95d182b
+  twitter: https://twitter.com/markproctor
+  github: https://github.com/mdproctor
+
+- name: Edson Tirelli
+  img: https://secure.gravatar.com/avatar/1b7f091584d6362942215fa51d5913ba
+  twitter: https://twitter.com/edsontirelli
+  github: https://github.com/etirelli
+
+- name: Mario Fusco
+  img: https://secure.gravatar.com/avatar/9eafc29df96e6aaf4a3eb4c0209086ae
+  twitter: https://twitter.com/mariofusco
+  github: https://github.com/mariofusco
+
+- name: Michael Biarnes Kiefer
+  img: https://secure.gravatar.com/avatar/b259671a57bb987c00a2e1ba37ff05c5
+  github: https://github.com/mbiarnes
+
+- name: Marek Novotný
+  img: https://secure.gravatar.com/avatar/68b0bb549bdafc79b3b2b9e9768e8a40
+  github: https://github.com/mareknovotny
+
+- name: Gemma Sheldon
+  img: https://secure.gravatar.com/avatar/8a55491fdc7512af28178979162e1230
+  github: https://github.com/gsheldon
+
+- name: Richard Bourner
+  img: https://secure.gravatar.com/avatar/df02e4b2e357e04e322e6b66bb24d795
+  github: https://github.com/rbourner
+
+- name: Tomáš David
+  img: https://secure.gravatar.com/avatar/2cfce770aad70db47b7613dd20010c98
+  github: https://github.com/tomasdavidorg
+  contributionsDescription: Vehicle routing problem android application
+
+- name: Bilgin Ibryam
+  img: https://secure.gravatar.com/avatar/279246bd111a7c211134179eddb94afa
+  twitter: https://twitter.com/bibryam
+  github: https://github.com/bibryam
+  contributionsDescription: Camel-optaplanner improvements
+
+- name: Petr Široký
+  img: https://secure.gravatar.com/avatar/e8eb2caefbe452befc919ea0977864c1
+  github: https://github.com/psiroky
+
+- name: Matyas Danter
+  img: https://secure.gravatar.com/avatar/bd0aa87d8591be9c05a5409bba500bad
+  twitter: https://twitter.com/mdanter
+  github: https://github.com/mdanter
+
+- name: Kevin Wallis
+  img: https://secure.gravatar.com/avatar/f8a8d5e6294ccd238be50c59c1ba6205
+  github: https://github.com/blackjack92
+
+- name: Marco Rietveld
+  img: https://secure.gravatar.com/avatar/d4dacb2e9fe88961621b8a89d119c6aa
+  twitter: https://twitter.com/marcorietveld
+  github: https://github.com/mrietveld
+
+- name: Christopher Chianelli
+  img: https://secure.gravatar.com/avatar/16f228a9f340e2a2ca5b42485a17bc3d
+  github: https://github.com/Christopher-Chianelli
+
+- name: Musa Talluzi
+  img: https://secure.gravatar.com/avatar/c223f1f4a939fe1d021c98dbdab74876
+  twitter: https://twitter.com/musatalluzi
+  github: https://github.com/MusaTalluzi
+
+- name: Walter Medvedeo
+  img: https://secure.gravatar.com/avatar/4a8c787544c0b40bc033f631dc2256c2
+  github: https://github.com/wmedvede
+
+- name: Julian Cui
+  img: https://secure.gravatar.com/avatar/2b5082fae5f8470b4bcf303f450e1ead
+  github: https://github.com/cuijulian
+
+- name: Justin Goldsmith
+  img: https://secure.gravatar.com/avatar/25cf632d99aec21bfcc60cebbdaa37b5
+  github: https://github.com/jgoldsmith613
+
+- name: Sudheer Chekka
+  img: https://secure.gravatar.com/avatar/897f2ff7d7a84cb3769d27a9889520c9
+  github: https://github.com/sudheerchekka
+
+- name: Frédéric Praca
+  img: https://secure.gravatar.com/avatar/f00d70c0d52205a685b8e7d919e41522
+  twitter: https://twitter.com/FredPraca
+  linkedin: https://www.linkedin.com/in/fredpraca
+  contributionsDescription: Only dependencies version upgrade
+
+- name: Phil Simpson
+  img: https://secure.gravatar.com/avatar/24a9f0af90dbc9d2e8d2eaf28505de24
+  twitter: https://twitter.com/philsimpson365
+
+- name: Emily Murphy
+  img: https://secure.gravatar.com/avatar/d2ad388269e6c48845da82f59da31e34
+
+- name: Enrique Mingorance Cano
+  img: https://secure.gravatar.com/avatar/d4fc2f6db03724741f7d4974ddb2d2a6
+  linkedin: https://www.linkedin.com/in/ginxo
+  github: https://github.com/ginxo
+
+- name: Daniele Zonca
+  img: https://secure.gravatar.com/avatar/b09ae180b02ca76ee04e408e5dc7aa67
+
+- name: Donato Marrazzo
+  img: https://secure.gravatar.com/avatar/ef5ad79f92fc5b4c6f8a28e11cf1c33a
+
+- name: Satish Kale
+  img: https://secure.gravatar.com/avatar/3a39052326f655d67d8d166089accf30
+
+- name: Paul Brown
+  img: https://secure.gravatar.com/avatar/50e2ded669d235709d5d7a28269ca94a
+
+- name: Tristan Radisson
+  img: https://secure.gravatar.com/avatar/f811db29788c9fb7c36bd8372d6ceba7
+  twitter: https://twitter.com/radtriste
+  github: https://github.com/radtriste

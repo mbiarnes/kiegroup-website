@@ -1,0 +1,35 @@
+# To add an event in the GitHub user interface, click on the Edit button at the top right which will submit a pull request.
+#
+# Available properties per event
+#  eventId: Should be in format "yyyymmdd-suffix". The yyyymmdd is the date
+#  eventOrganization: Name of the conference or organizer
+#  eventUrl: (optional) Link the event organization itself.
+#  location: Should be in format "city, country" or "city, state, country"
+#  date: Must be in format "yyyy-mm-dd". If multiple days cover our project, only note the first day
+#  talks: (optional) If the CFP is not yet accepted, do not include it yet.
+#    - title: Session title (without the conference or organizer name).
+#      url: (optional) Link to the event page itself.
+#      presenters: (optional) Comma separated list of presenters.
+#      videoUrl: (optional) Link to the video of the presentation
+#
+# Order events by date.
+
+- eventId: 20210517-kieweek
+  eventOrganization: "KIE week"
+  eventUrl: https://events.redhat.com/profile/form/index.cfm?PKformID=0x381217abcd
+  location: Worldwide
+  date: 2021-05-17
+  talks:
+    - title: "Optimize vaccine appointments to save the world with OptaPlanner AI"
+      presenters: Geoffrey De Smet
+    - title: "Success Stories in Process & Business Automation"
+      presenters: Jeremy Davis
+
+- eventId: 20210712-euro2021
+  eventOrganization: "European Conference on Operational Research"
+  eventUrl: https://euro2021athens.com
+  location: Athens, Greece
+  date: 2021-07-12
+  talks:
+    - title: "OptaPlanner - an enterprise open source constraint solver for VRP, shift rostering, etc"
+      presenters: Geoffrey De Smet

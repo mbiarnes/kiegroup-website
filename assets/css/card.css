@@ -1,0 +1,60 @@
+@import "list.css";
+
+.card {
+    display: grid;
+    grid-area: main;
+    grid-auto-rows: minmax(5rem, auto);
+    grid-template-areas: "head" "body" "foot";
+}
+
+.card--project {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    grid-auto-rows: 50% 50%;
+    grid-template-areas: "head" "body";
+    padding: 5rem;
+}
+
+.card .card-header {
+    grid-area: head;
+    margin: 0 auto;
+}
+
+.card .card-body {
+    grid-area: body;
+}
+
+.card .card-footer {
+    grid-area: foot;
+}
+
+.card--team {
+    grid-area: unset;
+}
+
+.card--team .card-body {
+    margin: 0 auto;
+}
+
+.card--team .member-picture {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    background-size: cover;
+    position: relative;
+    box-shadow: 0 0 0 10px #f8f8f8;
+    border-radius: 100%;
+    border-bottom: 2px solid #ddd;
+}
+
+.card--team .member-name {
+    font-weight: 600;
+}
+
+.card--team .member-social {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+}
