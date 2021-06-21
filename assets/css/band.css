@@ -8,6 +8,7 @@
 .container--band-2-col {
     display: inline-flex;
     flex-wrap: wrap-reverse;
+    gap: 2rem;
 }
 
 .container--band-about-intro {
