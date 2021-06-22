@@ -1,5 +1,9 @@
 :root {
     --secondary-color: #adadad;
+    --cta-primary-color: white;
+    --cta-secondary-color: black;
+    --cta-primary-background-color: #f78e00;
+    --cta-secondary-background-color: #96d4e9;
 }
 
 *,
@@ -146,3 +150,4 @@ footer .row .column a.logo {
 @import "video-playlist.css";
 @import "navigation.css";
 @import "quote.css";
+@import "button.css";

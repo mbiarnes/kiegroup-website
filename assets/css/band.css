@@ -11,9 +11,22 @@
     gap: 2rem;
 }
 
-.container--band-about-intro {
+.container--band-centered {
     max-width: 75%;
     text-align: center;
+}
+
+.container--band-with-aside {
+    max-width: 75%;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 2rem;
+}
+
+.container--band-cta {
+    flex-flow: column;
+    gap: 2rem;
 }
 
 .container--band-team {

@@ -1,0 +1,26 @@
+.button {
+    display: block;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.button--cta {
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    font-weight: 800;
+    font-size: 2.25rem;
+}
+
+.button--cta-primary {
+    padding: 3rem;
+    color: var(--cta-primary-color);
+    background-color: var(--cta-primary-background-color);
+    text-shadow: 2px 2px 2px var(--cta-secondary-color);
+}
+
+.button--cta-secondary {
+    color: var(--cta-secondary-color);
+    background-color: var(--cta-secondary-background-color);
+    text-shadow: 2px 2px 2px var(--cta-primary-color);
+}
