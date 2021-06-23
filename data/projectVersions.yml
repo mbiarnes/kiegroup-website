@@ -1,0 +1,16 @@
+drools:
+  latestFinal:
+    version: 7.55.0.Final
+    distributionZip: https://download.jboss.org/drools/release/7.55.0.Final/drools-distribution-7.55.0.Final.zip
+jbpm:
+  latestFinal:
+    version: 7.55.0.Final
+    distributionZip: https://download.jboss.org/jbpm/release/7.55.0.Final/jbpm-server-7.55.0.Final-dist.zip
+kogito:
+  latestFinal:
+    version:
+    distributionZip:
+optaplanner:
+  latestFinal:
+    version: 8.7.0.Final
+    distributionZip: https://download.jboss.org/optaplanner/release/8.7.0.Final/optaplanner-distribution-8.7.0.Final.zip
