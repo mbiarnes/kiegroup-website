@@ -24,7 +24,9 @@
   </div>
 </div>
 <div class="container--band container--band-2-col">
-  <@events.latestEvents />
+  <#-- <@events.latestEvents /> -->
+  <iframe src="https://calendar.google.com/calendar/embed?height=400&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=UTC&amp;src=YjgxcHA0ZmlldWpuOTh2ZWtxMXFmYmgwZ2NAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=YXV1cGc5OWhhMW4wbmM0ZnNkamozdWhicThAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23D81B60&amp;color=%23E67C73&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA"
+          width="250" height="400" frameborder="0" scrolling="no"></iframe>
   <div class="blog-list">
     <div class="card card--blog-list">
       <h1 class="card-header">Latest Blog Posts</h1>
