@@ -1,9 +1,9 @@
 <header class="header">
     <nav class="navigation">
+        <div class="logo" aria-label="logo"></div>
         <div class="navigation--primary">
-            <div class="logo" aria-label="logo"></div>
             <h1><a href="/" <#if ((content.active_menu!"kie") == "kie")>class="navigation-item--active"</#if>>KIE</a></h1>
-            <a href="https://blog.kie.org" <#if ((content.active_menu!"") == "blog")>class="navigation-item--active"</#if>>Blog</a>
+            <#-- <a href="https://blog.kie.org" <#if ((content.active_menu!"") == "blog")>class="navigation-item--active"</#if>>Blog</a> -->
             <a href="/project/kogito" <#if ((content.active_menu!"") == "kogito")>class="navigation-item--active"</#if>>Kogito</a>
             <a href="/project/drools" <#if ((content.active_menu!"") == "drools")>class="navigation-item--active"</#if>>Drools</a>
             <a href="/project/jbpm" <#if ((content.active_menu!"") == "jbpm")>class="navigation-item--active"</#if>>JBPM</a>
