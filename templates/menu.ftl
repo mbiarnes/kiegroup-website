@@ -4,10 +4,10 @@
         <div class="navigation--primary">
             <h1><a href="/" <#if ((content.active_menu!"kie") == "kie")>class="navigation-item--active"</#if>>KIE</a></h1>
             <#-- <a href="https://blog.kie.org" <#if ((content.active_menu!"") == "blog")>class="navigation-item--active"</#if>>Blog</a> -->
-            <a href="/project/kogito" <#if ((content.active_menu!"") == "kogito")>class="navigation-item--active"</#if>>Kogito</a>
-            <a href="/project/drools" <#if ((content.active_menu!"") == "drools")>class="navigation-item--active"</#if>>Drools</a>
-            <a href="/project/jbpm" <#if ((content.active_menu!"") == "jbpm")>class="navigation-item--active"</#if>>JBPM</a>
-            <a href="/project/optaplanner" <#if ((content.active_menu!"") == "optaplanner")>class="navigation-item--active"</#if>>Optaplanner</a>
+            <a href="https://kogito.kie.org/" <#if ((content.active_menu!"") == "kogito")>class="navigation-item--active"</#if>>Kogito</a>
+            <a href="https://drools.org/" <#if ((content.active_menu!"") == "drools")>class="navigation-item--active"</#if>>Drools</a>
+            <a href="https://jbpm.org/" <#if ((content.active_menu!"") == "jbpm")>class="navigation-item--active"</#if>>jBPM</a>
+            <a href="https://www.optaplanner.org/" <#if ((content.active_menu!"") == "optaplanner")>class="navigation-item--active"</#if>>OptaPlanner</a>
             <a href="#" class="responsive-menu-button">☰</a>
         </div>
         <div class="navigation--secondary">
@@ -16,7 +16,7 @@
         </div>
     </nav>
 </header>
-
+<#--
 <div class="navigation--responsive">
     <ul>
         <li>
@@ -32,8 +32,9 @@
                 <li><a href="/optaplanner">Optaplanner</a></li>
             </ul>
             <ul>
-                <#-- Secondary nav depending on what is being viewed will go here -->
+                Secondary nav depending on what is being viewed will go here
             </ul>
         </li>
     </ul>
 </div>
+-->
