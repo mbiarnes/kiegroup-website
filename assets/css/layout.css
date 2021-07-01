@@ -11,7 +11,7 @@
 }
 
 .container--main-video {
-    display: unset !important;
+    grid-template-columns: repeat(auto-fit, minmax(auto, 560px));
 }
 
 
