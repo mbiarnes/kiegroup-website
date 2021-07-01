@@ -17,6 +17,11 @@
     padding: 5rem;
 }
 
+.card--project img {
+    height: 90px;
+    max-width: 350px;
+}
+
 .card .card-header {
     grid-area: head;
     margin: 0 auto;
