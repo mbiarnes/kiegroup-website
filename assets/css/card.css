@@ -9,17 +9,10 @@
 
 .card--project {
     max-width: 400px;
-    margin: 0 auto;
     text-align: center;
     align-items: center;
-    grid-auto-rows: 50% 50%;
     grid-template-areas: "head" "body";
-    padding: 5rem;
-}
-
-.card--project img {
-    height: 90px;
-    max-width: 350px;
+    padding: 2rem;
 }
 
 .card .card-header {
