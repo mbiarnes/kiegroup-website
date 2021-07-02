@@ -40,7 +40,7 @@ header {
     text-transform: uppercase;
     line-height: 1.0;
     text-decoration: none;
-    padding: 0.2rem 1rem;
+    padding: 0.2rem .54rem;
 }
 
 .navigation .logo {
@@ -78,7 +78,7 @@ header {
 
 .navigation--secondary a {
     text-decoration: none;
-    padding: 0 2rem;
+    padding: 0 1rem;
     font-weight: unset;
     color: unset;
     text-transform: unset;
