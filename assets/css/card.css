@@ -13,6 +13,7 @@
     align-items: center;
     grid-template-areas: "head" "body";
     padding: 2rem;
+    margin: 0 auto;
 }
 
 .card .card-header {
