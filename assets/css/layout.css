@@ -10,6 +10,27 @@
     margin: 0 auto;
 }
 
+/*
+  Really wide screens
+ */
+@media only screen and (min-width: 1301px) {
+    .container--main {
+        max-width: 50%;
+    }
+}
+@media only screen and (min-width: 1440px) {
+    .container--main {
+        max-width: 45%;
+    }
+}
+
+/* 4k */
+@media only screen and (min-width: 2560px) {
+    .container--main {
+        max-width: 30%;
+    }
+}
+
 .container--main-video {
     grid-template-columns: repeat(auto-fit, minmax(auto, 560px));
 }
