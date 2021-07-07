@@ -19,8 +19,6 @@
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSfdaNsMJjeHv_O0Ltwx-7Pn8B6ok2bynNVt62cikauGeNQv4Q/viewform">the
                 survey</a>.
         </p>
-    </div>
-    <div class="container--band">
         <#-- <@events.latestEvents /> -->
         <div class="blog-list">
             <div class="card card--blog-list">
