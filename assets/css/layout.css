@@ -32,7 +32,9 @@
 }
 
 .container--main-video {
-    grid-template-columns: repeat(auto-fit, minmax(auto, 560px));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 560px));
+    justify-content: center;
+    max-width: unset;
 }
 
 .container--full {
