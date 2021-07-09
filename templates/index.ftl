@@ -3,22 +3,26 @@
 
 <@base.layout>
     <div class="container container--full">
-        <p>
-            KIE Live events are live streams designed to facilitate knowledge sharing about the Business Automation topic,
-            including business rules, decisions, processes, resource planning, tooling, and AI. They're community events and
-            anyone is welcome to attend! The latest video is on the left. The events are live streamed on Tuesdays around
-            11:00 AM Eastern.
-        </p>
-        <div class="video-playlist--wrapper">
-            <iframe width="560" height="315"
-                    src="https://www.youtube.com/embed/videoseries?list=PLo3ZScdD9hW4S94iT3ZgOWm8asSHuMDYn"
-                    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <div class="container container--front-video">
+            <div class="front-video-text">
+                <p>
+                    KIE Live events are live streams designed to facilitate knowledge sharing about the Business Automation topic,
+                    including business rules, decisions, processes, resource planning, tooling, and AI. They're community events and
+                    anyone is welcome to attend! The latest video is on the left. The events are live streamed on Tuesdays around
+                    11:00 AM Eastern.
+                </p>
+                <p>
+                    If you have suggestions or feedback about KIE Live events, please visit and fill out
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfdaNsMJjeHv_O0Ltwx-7Pn8B6ok2bynNVt62cikauGeNQv4Q/viewform">the
+                        survey</a>.
+                </p>
+            </div>
+            <div class="video-playlist--wrapper">
+                <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/videoseries?list=PLo3ZScdD9hW4S94iT3ZgOWm8asSHuMDYn"
+                        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
         </div>
-        <p>
-            If you have suggestions or feedback about KIE Live events, please visit and fill out
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfdaNsMJjeHv_O0Ltwx-7Pn8B6ok2bynNVt62cikauGeNQv4Q/viewform">the
-                survey</a>.
-        </p>
         <#-- <@events.latestEvents /> -->
         <div class="blog-list">
             <div class="card card--blog-list">

@@ -20,3 +20,18 @@
     width: 100%;
     height: 100%;
 }
+
+.container--front-video .video-playlist--wrapper {
+    grid-column: 2/end;
+}
+
+@media only screen and (max-width: 1000px) {
+    .container--front-video .video-playlist--wrapper {
+        grid-column: 1/end;
+        grid-row-start: 2;
+    }
+    .container--front-video .front-video-text {
+        grid-column: 1/end;
+        grid-row-start: 1;
+    }
+}
