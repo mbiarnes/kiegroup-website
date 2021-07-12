@@ -1,0 +1,41 @@
+diff --git a/node_modules/@bitovi/calendar-events-component/calendar-events.js b/node_modules/@bitovi/calendar-events-component/calendar-events.js
+index 69b6825..54bd6c2 100644
+--- a/node_modules/@bitovi/calendar-events-component/calendar-events.js
++++ b/node_modules/@bitovi/calendar-events-component/calendar-events.js
+@@ -194,15 +194,25 @@ module.exports = safeCustomElement("calendar-events", function(){
+ 	get showRecurring(){
+ 		return this.hasAttribute("show-recurring");
+ 	},
++    get showPastEvents() {
++        return this.hasAttribute("show-past-events");
++    },
+ 	get eventCount(){
+ 		return parseInt( this.getAttribute("event-count"), 10) || 10;
+ 	},
++
+ 	connectedCallback: function(){
+ 		var template = this.querySelector("template");
+ 		this.template = template ? template.content : defaultTemplate();
+-		this.innerHTML = "<div class='calendar-events-pending'></div>";
++		this.innerHTML = "";
+ 		var url = "https://www.googleapis.com/calendar/v3/calendars/"+
+-			this.calendarId+"/events?key="+this.apiKey;
++          this.calendarId+"/events?key="+this.apiKey;
++        if (!this.showPastEvents) {
++          url += "&timeMin="+todayDate().toISOString();
++        }
++        if (this.showRecurring) {
++          url += "&singleEvents=true";
++        }
+ 		fetch( url ).then(function(response){
+ 				return response.json();
+ 		})
+@@ -248,7 +258,7 @@ module.exports = safeCustomElement("calendar-events", function(){
+ 			setTextContent(container, ".event-title",  event.summary);
+ 			setTextContent(container, ".event-group",  metaData.group);
+ 			setTextContent(container, ".event-date",  eventDate(event) );
+-			setHtmlContent(container, ".event-location",  linkify(event.location || event.hangoutLink) );
++			setHtmlContent(container, ".event-location",  linkify(event.location || event.hangoutLink || "") );
+ 
+ 			setHtmlContent(container, ".event-body",  metaData.descriptionHTML );
+ 
