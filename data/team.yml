@@ -30,14 +30,6 @@
   img: https://secure.gravatar.com/avatar/f1b0cd1c06b5697dbc91f02ea00f3090
   github: https://github.com/rsynek
 
-- name: Anna Dupliak
-  img: https://secure.gravatar.com/avatar/54cd5de3bdaf21a942e8d9d5fe95f647
-  twitter: https://twitter.com/dupliaka
-
-- name: Michal Tomčo
-  img: https://secure.gravatar.com/avatar/ac8d5ec97e225c049fae098f640250c7
-  github: https://github.com/michaltomco
-
 - name: Duncan Doyle
   img: https://secure.gravatar.com/avatar/6d3eaffeaf61a8f3ea86c2d0b701bc2d
   twitter: https://twitter.com/DuncanDoyle
@@ -105,11 +97,6 @@
 - name: Richard Bourner
   img: https://secure.gravatar.com/avatar/df02e4b2e357e04e322e6b66bb24d795
   github: https://github.com/rbourner
-
-- name: Tomáš David
-  img: https://secure.gravatar.com/avatar/2cfce770aad70db47b7613dd20010c98
-  github: https://github.com/tomasdavidorg
-  contributionsDescription: Vehicle routing problem android application
 
 - name: Bilgin Ibryam
   img: https://secure.gravatar.com/avatar/279246bd111a7c211134179eddb94afa
@@ -190,11 +177,6 @@
 - name: Paul Brown
   img: https://secure.gravatar.com/avatar/50e2ded669d235709d5d7a28269ca94a
 
-- name: Tristan Radisson
-  img: https://secure.gravatar.com/avatar/f811db29788c9fb7c36bd8372d6ceba7
-  twitter: https://twitter.com/radtriste
-  github: https://github.com/radtriste
-
 - name: Rui Vieira
   img: https://secure.gravatar.com/avatar/48b53f3f075668b8c4230cb1d4d442d4
   twitter: https://twitter.com/ruimvieira
@@ -215,3 +197,119 @@
 - name: Neus Miras
   img: https://secure.gravatar.com/avatar/94212c8edd3c1691e2ae691ade741599?s
   github: https://github.com/nmirasch
+  
+- name: Eder Ignatowicz
+  img: https://s.gravatar.com/avatar/b937ab5ebe4923869c0da0d3c1b58778
+  github: https://github.com/ederign
+
+- name: Anna Dupliak
+  img: https://secure.gravatar.com/avatar/54cd5de3bdaf21a942e8d9d5fe95f647
+  twitter: https://twitter.com/dupliaka
+  github: https://github.com/dupliaka
+
+- name: Antonio Fernandez Alhambra
+  img: https://secure.gravatar.com/avatar/
+  github: https://github.com/afalhambra
+
+- name: Barbora Šišková
+  img: https://secure.gravatar.com/avatar/
+  github: https://github.com/barboras7
+
+- name: Daniel Rosa
+  img: https://secure.gravatar.com/avatar/
+  github: https://github.com/hellowdan
+
+- name: Dominik Hanák
+  img: https://secure.gravatar.com/avatar/
+  github: https://github.com/domhanak
+
+- name: Gonzalo Muñoz
+  img: https://secure.gravatar.com/avatar/
+  github: https://github.com/gmunozfe
+
+- name: Gui Jospin
+  img: https://secure.gravatar.com/avatar/
+  github: https://github.com/guijospin
+
+- name: Jan Šťastný
+  img: https://secure.gravatar.com/avatar/
+  github: https://github.com/jstastny-cz
+
+- name: Jiří Petrlík
+  img: https://secure.gravatar.com/avatar/
+  github: https://github.com/jiripetrlik
+
+- name: Jakub Schwan
+  img: https://secure.gravatar.com/avatar/
+  github: https://github.com/jakubschwan
+
+- name: Jiří Šimek
+  img: https://secure.gravatar.com/avatar/
+  github: https://github.com/jirisimek98
+
+- name: Jozef Marko
+  img: https://secure.gravatar.com/avatar/
+  github: https://github.com/jomarko
+
+- name: Karel Šuta
+  img: https://secure.gravatar.com/avatar/
+  github: https://github.com/sutaakar
+
+- name: Ľubo Terifaj
+  img: https://secure.gravatar.com/avatar/
+  github: https://github.com/LuboTerifaj
+
+- name: Marek Winkler
+  img: https://secure.gravatar.com/avatar/
+  github: https://github.com/winklerm
+
+- name: Marián Macik
+  img: https://secure.gravatar.com/avatar/
+  github: https://github.com/MarianMacik
+
+- name: Martin Cimbálek
+  img: https://secure.gravatar.com/avatar/
+  github: https://github.com/cimbalek
+
+- name: Michal Červeňanský
+  img: https://secure.gravatar.com/avatar/
+  github: https://github.com/MichalCervenansky
+
+- name: Paolo Bizzarri
+  img: https://secure.gravatar.com/avatar/
+  github: https://github.com/pibizza
+
+- name: Prashanth T S
+  img: https://secure.gravatar.com/avatar/
+  github: https://github.com/prashuts
+
+- name: Samuel Kulíšek
+  img: https://secure.gravatar.com/avatar/
+  github: https://github.com/skulisek
+
+- name: Savitha Thundathil Jose
+  img: https://secure.gravatar.com/avatar/
+  github: https://github.com/sthundat
+
+- name: Soňa Malá
+  img: https://secure.gravatar.com/avatar/
+  github: https://github.com/sjamboro
+
+- name: Srihari Venkataramaiah
+  img: https://secure.gravatar.com/avatar/
+  github: https://github.com/Srihari1192
+
+- name: Tomáš David
+  img: https://secure.gravatar.com/avatar/2cfce770aad70db47b7613dd20010c98
+  github: https://github.com/tomasdavidorg
+  contributionsDescription: Vehicle routing problem android application
+
+- name: Tibor Zimányi
+  img: https://secure.gravatar.com/avatar/
+  linkedin: https://www.linkedin.com/in/tibor-zim%C3%A1nyi-a0bbb430
+  github: https://github.com/baldimir
+
+- name: Tristan Radisson
+  img: https://secure.gravatar.com/avatar/f811db29788c9fb7c36bd8372d6ceba7
+  twitter: https://twitter.com/radtriste
+  github: https://github.com/radtriste
