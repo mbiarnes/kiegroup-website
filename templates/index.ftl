@@ -4,6 +4,11 @@
 <@base.layout>
     <div class="container container--full">
         <div class="container container--front-video">
+            <div class="video-playlist--wrapper">
+                <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/videoseries?list=PLo3ZScdD9hW4S94iT3ZgOWm8asSHuMDYn"
+                        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
             <div class="front-video-text">
                 <p>
                     KIE Live events are live streams designed to facilitate knowledge sharing about the Business Automation topic,
@@ -16,11 +21,6 @@
                     <a href="https://docs.google.com/forms/d/e/1FAIpQLSfdaNsMJjeHv_O0Ltwx-7Pn8B6ok2bynNVt62cikauGeNQv4Q/viewform">the
                         survey</a>.
                 </p>
-            </div>
-            <div class="video-playlist--wrapper">
-                <iframe width="560" height="315"
-                        src="https://www.youtube.com/embed/videoseries?list=PLo3ZScdD9hW4S94iT3ZgOWm8asSHuMDYn"
-                        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             </div>
         </div>
         <#-- <@events.latestEvents /> -->

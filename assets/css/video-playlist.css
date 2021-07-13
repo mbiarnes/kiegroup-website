@@ -21,17 +21,15 @@
     height: 100%;
 }
 
-.container--front-video .video-playlist--wrapper {
-    grid-column: 2/end;
-}
-
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 600px) {
     .container--front-video .video-playlist--wrapper {
-        grid-column: 1/end;
         grid-row-start: 2;
     }
     .container--front-video .front-video-text {
-        grid-column: 1/end;
         grid-row-start: 1;
+    }
+
+    .container--front-video {
+        grid-template-columns: unset;
     }
 }
