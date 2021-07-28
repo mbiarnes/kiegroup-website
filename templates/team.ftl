@@ -10,7 +10,11 @@
                 <img class="member-picture" src="${member.img}" alt="${member.name}"></div>
             </#if>
             <div class="card-body">
-                <div class="member-name">${member.name}</div>
+                <#if member.blogId??>
+                    <div class="member-name"><a href="https://blog.kie.org/category/all?search_authors=${member.blogId}">${member.name}</a></div>
+                    <#else>
+                        <div class="member-name">${member.name}</div>
+                </#if>
                 <div class="member-social">
                     <#if member.twitter??>
                         <a href="${member.twitter}"><i class="fab fa-twitter"></i></a>

@@ -7,12 +7,14 @@
 #  twitter: https://twitter.com/lightguardjp
 #  linkedin: https://www.linkedin.com/in/jasonporter/
 #  github: https://github.com/LightGuard/
+#  blogId: 25
 #
 - name: Geoffrey De Smet
   img: https://secure.gravatar.com/avatar/27147a6679a4bfb6461ff1c0ae10473e
   twitter: https://twitter.com/GeoffreyDeSmet
   linkedin: https://www.linkedin.com/in/ge0ffrey
   github: https://github.com/ge0ffrey
+  blogId: 39
 
 - name: Lukáš Petrovický
   img: https://secure.gravatar.com/avatar/c950743f532471ac34022e92193563c3
@@ -25,10 +27,12 @@
 - name: Jiří Locker
   img: https://secure.gravatar.com/avatar/c4e5f1a35064cb21de3b3e4bf5bd7ae8
   github: https://github.com/yurloc
+  blogId: 237
 
 - name: Radovan Synek
   img: https://secure.gravatar.com/avatar/f1b0cd1c06b5697dbc91f02ea00f3090
   github: https://github.com/rsynek
+  blogId: 226
 
 - name: Duncan Doyle
   img: https://secure.gravatar.com/avatar/6d3eaffeaf61a8f3ea86c2d0b701bc2d
@@ -40,6 +44,7 @@
   twitter: https://twitter.com/kvarel4
   github: https://github.com/kmacedovarela
   linkedin: https://www.linkedin.com/in/kmacedovarela
+  blogId: 67
 
 - name: Ivo Bek
   img: https://secure.gravatar.com/avatar/6228ff5e6c6a7e64e364b5c494e5b4dc
@@ -71,16 +76,19 @@
   img: https://secure.gravatar.com/avatar/461df23df429c87550d3ce25c95d182b
   twitter: https://twitter.com/markproctor
   github: https://github.com/mdproctor
+  blogId: 3
 
 - name: Edson Tirelli
   img: https://secure.gravatar.com/avatar/1b7f091584d6362942215fa51d5913ba
   twitter: https://twitter.com/edsontirelli
   github: https://github.com/etirelli
+  blogId: 33
 
 - name: Mario Fusco
   img: https://secure.gravatar.com/avatar/9eafc29df96e6aaf4a3eb4c0209086ae
   twitter: https://twitter.com/mariofusco
   github: https://github.com/mariofusco
+  blogId: 38
 
 - name: Michael Biarnes Kiefer
   img: https://secure.gravatar.com/avatar/b259671a57bb987c00a2e1ba37ff05c5
@@ -125,11 +133,13 @@
 - name: Christopher Chianelli
   img: https://secure.gravatar.com/avatar/16f228a9f340e2a2ca5b42485a17bc3d
   github: https://github.com/Christopher-Chianelli
+  blogId: 222
 
 - name: Musa Talluzi
   img: https://secure.gravatar.com/avatar/c223f1f4a939fe1d021c98dbdab74876
   twitter: https://twitter.com/musatalluzi
   github: https://github.com/MusaTalluzi
+  blogId: 225
 
 - name: Walter Medvedeo
   img: https://secure.gravatar.com/avatar/4a8c787544c0b40bc033f631dc2256c2
@@ -138,14 +148,17 @@
 - name: Julian Cui
   img: https://secure.gravatar.com/avatar/2b5082fae5f8470b4bcf303f450e1ead
   github: https://github.com/cuijulian
+  blogId: 224
 
 - name: Justin Goldsmith
   img: https://secure.gravatar.com/avatar/25cf632d99aec21bfcc60cebbdaa37b5
   github: https://github.com/jgoldsmith613
+  blogId: 228
 
 - name: Sudheer Chekka
   img: https://secure.gravatar.com/avatar/897f2ff7d7a84cb3769d27a9889520c9
   github: https://github.com/sudheerchekka
+  blogId: 227
 
 - name: Frédéric Praca
   img: https://secure.gravatar.com/avatar/f00d70c0d52205a685b8e7d919e41522
@@ -164,80 +177,93 @@
   img: https://secure.gravatar.com/avatar/d4fc2f6db03724741f7d4974ddb2d2a6
   linkedin: https://www.linkedin.com/in/ginxo
   github: https://github.com/ginxo
+  blogId: 270
 
 - name: Daniele Zonca
   img: https://secure.gravatar.com/avatar/b09ae180b02ca76ee04e408e5dc7aa67
+  blogId: 68
 
 - name: Donato Marrazzo
   img: https://secure.gravatar.com/avatar/ef5ad79f92fc5b4c6f8a28e11cf1c33a
+  blogId: 242
 
 - name: Satish Kale
   img: https://secure.gravatar.com/avatar/3a39052326f655d67d8d166089accf30
 
 - name: Paul Brown
   img: https://secure.gravatar.com/avatar/50e2ded669d235709d5d7a28269ca94a
+  blogId: 57
 
 - name: Rui Vieira
   img: https://secure.gravatar.com/avatar/48b53f3f075668b8c4230cb1d4d442d4
   twitter: https://twitter.com/ruimvieira
   linkedin: https://www.linkedin.com/in/ruimvieira/
   github: https://github.com/ruivieira
-  
+  blogId: 55
+
 - name: Michael Anstis
   img: https://secure.gravatar.com/avatar/a4bfc256ef0468092bd116bb935b5bad
   linkedin: https://www.linkedin.com/in/manstis/
   github: https://github.com/manstis
+  blogId: 44
 
 - name: Cristiano Nicolai
   img: https://secure.gravatar.com/avatar/bb01eff89bf810df5a2f4151cecac7d3
   twitter: https://twitter.com/cris_nicolai
   linkedin: https://www.linkedin.com/in/cristianonicolai/
   github: https://github.com/cristianonicolai
+  blogId: 30
 
 - name: Neus Miras
   img: https://secure.gravatar.com/avatar/94212c8edd3c1691e2ae691ade741599?s
   github: https://github.com/nmirasch
-  
+
 - name: Eder Ignatowicz
   img: https://s.gravatar.com/avatar/b937ab5ebe4923869c0da0d3c1b58778
   github: https://github.com/ederign
-  
+  blogId: 24
+
 - name: Alessandro Lazarotti
   img: https://secure.gravatar.com/avatar/
   github: https://github.com/lazarotti
-  
+  blogId: 260
+
 - name: Alex Porcelli
   img: https://secure.gravatar.com/avatar/
   github: https://github.com/porcelli
-  
+  blogId: 5
+
 - name: Dmitrii Tikhomirov
   img: https://secure.gravatar.com/avatar/
   github: https://github.com/treblereel
-  
+
 - name: Handrey Cunha
   img: https://secure.gravatar.com/avatar/
   github: https://github.com/handreyrc
-  
+
 - name: Jaime Enriquez Parada
   img: https://secure.gravatar.com/avatar/
   github: https://github.com/inodeman
-  
+
 - name: Kirill Gaevskii
   img: https://secure.gravatar.com/avatar/
   github: https://github.com/hasys
+  blogId: 248
 
 - name: Pere Fernandez Perez
   img: https://secure.gravatar.com/avatar/
   github: https://github.com/pefernan
-  
+
 - name: Roger Martinez Palleja
   img: https://secure.gravatar.com/avatar/
   github: https://github.com/romartin
+  blogId: 249
 
 - name: Tiago Dolphine
   img: https://secure.gravatar.com/avatar/
   github: https://github.com/tiagodolphine
-  
+  blogId: 268
+
 - name: Wagner Lemos
   img: https://secure.gravatar.com/avatar/
   github: https://github.com/Josephblt
@@ -266,6 +292,7 @@
 - name: Gonzalo Muñoz
   img: https://secure.gravatar.com/avatar/
   github: https://github.com/gmunozfe
+  blogId: 243
 
 - name: Gui Jospin
   img: https://secure.gravatar.com/avatar/
@@ -290,6 +317,7 @@
 - name: Jozef Marko
   img: https://secure.gravatar.com/avatar/
   github: https://github.com/jomarko
+  blogId: 264
 
 - name: Karel Šuta
   img: https://secure.gravatar.com/avatar/
@@ -298,6 +326,7 @@
 - name: Ľubo Terifaj
   img: https://secure.gravatar.com/avatar/
   github: https://github.com/LuboTerifaj
+  blogId: 244
 
 - name: Marek Winkler
   img: https://secure.gravatar.com/avatar/
@@ -343,6 +372,7 @@
   img: https://secure.gravatar.com/avatar/2cfce770aad70db47b7613dd20010c98
   github: https://github.com/tomasdavidorg
   contributionsDescription: Vehicle routing problem android application
+  blogId: 34
 
 - name: Tibor Zimányi
   img: https://secure.gravatar.com/avatar/
@@ -354,27 +384,31 @@
   twitter: https://twitter.com/radtriste
   github: https://github.com/radtriste
 
-- name: Toni Rikkola 
+- name: Toni Rikkola
   img: https://secure.gravatar.com/avatar/c0141089d9194697aeb0c7e56f02373f
   github: https://github.com/rikkola
+  blogId: 42
 
 - name: Guilherme Carreiro
   img: https://karreiro.com/assets/profile-picture-blog.png
   twitter: https://twitter.com/karreiro_
   linkedin: https://www.linkedin.com/in/karreiro/
   github: https://github.com/karreiro
+  blogId: 29
 
 - name: Yeser Amer
   img: https://secure.gravatar.com/avatar/8a7bca87fdb52ce4ab327c6ac1d19eac
   twitter: https://twitter.com/yesrema
   linkedin: https://www.linkedin.com/in/yeseramer/
-  github: https://github.com/yesamer`
+  github: https://github.com/yesamer
+  blogId: 238
 
 - name: Valentino Pellegrino
   img: https://avatars.githubusercontent.com/u/22591802?v=4
   twitter: https://twitter.com/valpellegr
   linkedin: https://www.linkedin.com/in/valentinopellegrino/
   github: https://github.com/vpellegrino/
+  blogId: 69
 
 - name: Daniel J dos Santos
   img: https://avatars.githubusercontent.com/u/7305741?v=4
