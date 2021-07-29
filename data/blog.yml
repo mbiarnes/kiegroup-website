@@ -1,0 +1,25 @@
+categories:
+  -
+    name: process
+    id: 4
+    color: "#6d4cd4"
+  -
+    name: rules
+    id: 3
+    color: "#ba559f"
+  -
+    name: optimization
+    id: 5
+    color: "446ed5"
+  -
+    name: ai
+    id: 52
+    color: "#c34e53"
+  -
+    name: general
+    id: 39
+    color: "#c34e53"
+  -
+    name: tools
+    id: 38
+    color: "#6d4cd4"

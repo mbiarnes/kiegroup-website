@@ -1,5 +1,5 @@
 <#import "base.ftl" as base>
-<#import "events.ftl" as events>
+<#assign blog = data.get('blog.yml')>
 
 <@base.layout>
     <div class="container container--full">
@@ -23,49 +23,44 @@
                 </p>
             </div>
         </div>
-        <#-- <@events.latestEvents /> -->
         <div class="blog-list">
             <div class="card card--blog-list">
                 <h1 class="card-header">Latest Blog Posts</h1>
                 <div class="card--body">
-                    <cpx-query auto url="https://blog.kie.org/wp-json/wp/v2/posts">
-                        <template>
-                            <style>
-                                article {
-                                    display: grid;
-                                    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-                                    grid-gap: 2rem;
-                                    font-size: 12pt;
-                                    font-family: RedHatText, "Red Hat Text", Overpass, Overpass, "Helvetica Neue", Arial, sans-serif;
-                                }
-
-                                a {
-                                    text-decoration: none;
-                                    color: #369;
-                                }
-
-                                h1, h2, h3, h4 {
-                                    margin: 0;
-                                    padding: 0;
-                                }
-                            </style>
-                            <article data-repeat>
-                                <section>
-                                    <header>
-                                        <h3><a href="${'$'}{link}">${'$'}{title.rendered}</a></h3>
-                                        <h4>
-                                            <pfe-datetime datetime="${'$'}{date}">${'$'}{date}</pfe-datetime>
-                                            -
-                                            <cpx-query auto url="${'$'}{_links.author.0.href}" template="#authorTmpl"
-                                                       cache="force-cache"></cpx-query>
-                                        </h4>
-                                    </header>
-                                </section>
-                            </article>
-                        </template>
-                    </cpx-query>
+                    <#list blog.categories as category>
+                        <cpx-query auto url="https://blog.kie.org/wp-json/wp/v2/posts?categories=${category.id}&per_page=3">
+                            <template>
+                                <style>
+                                    a {
+                                        text-decoration: none;
+                                        color: #369;
+                                    }
+                                    h2 {
+                                        color: ${category.color};
+                                    }
+                                    h4 {
+                                        font-size: 10pt;
+                                    }
+                                    h1, h2, h3, h4 {
+                                        margin: 0;
+                                        padding: 0;
+                                    }
+                                </style>
+                                <h2>${category.name?capitalize}</h2>
+                                <article data-repeat>
+                                    <section>
+                                        <header>
+                                            <h3><a href="${'$'}{link}">${'$'}{title.rendered}</a></h3>
+                                            <h4>
+                                                <pfe-datetime datetime="${'$'}{date}">${'$'}{date}</pfe-datetime>
+                                            </h4>
+                                        </header>
+                                    </section>
+                                </article>
+                            </template>
+                        </cpx-query>
+                    </#list>
                 </div>
-                <template id="authorTmpl">${'$'}{name}</template>
                 <script type="module" src="https://unpkg.com/@patternfly/pfe-datetime@1.9.2/dist/pfe-datetime.js"
                         async></script>
             </div>
