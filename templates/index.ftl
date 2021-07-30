@@ -25,7 +25,7 @@
         </div>
         <div class="blog-list">
             <div class="card card--blog-list">
-                <h1 class="card-header">Latest Blog Posts</h1>
+                <h1 class="card-header"><a href="https://blog.kie.org">Latest Blog Posts</a></h1>
                 <div class="card--body">
                     <#list blog.categories as category>
                         <cpx-query auto url="https://blog.kie.org/wp-json/wp/v2/posts?categories=${category.id}&per_page=3">
@@ -35,25 +35,22 @@
                                         text-decoration: none;
                                         color: #369;
                                     }
-                                    h2 {
+                                    h2 a {
                                         color: ${category.color};
                                     }
                                     h4 {
                                         font-size: 10pt;
                                     }
-                                    h1, h2, h3, h4 {
+                                    h2, h3 {
                                         margin: 0;
                                         padding: 0;
                                     }
                                 </style>
-                                <h2>${category.name?capitalize}</h2>
+                                <h2><a href="https://blog.kie.org/featured/${category.name}">${category.name?capitalize}</a></h2>
                                 <article data-repeat>
                                     <section>
                                         <header>
                                             <h3><a href="${'$'}{link}">${'$'}{title.rendered}</a></h3>
-                                            <h4>
-                                                <pfe-datetime datetime="${'$'}{date}">${'$'}{date}</pfe-datetime>
-                                            </h4>
                                         </header>
                                     </section>
                                 </article>
@@ -65,10 +62,6 @@
                         async></script>
             </div>
         </div>
-        <#--
-        <iframe src="https://calendar.google.com/calendar/embed?height=400&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=UTC&amp;src=YjgxcHA0ZmlldWpuOTh2ZWtxMXFmYmgwZ2NAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=YXV1cGc5OWhhMW4wbmM0ZnNkamozdWhicThAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23D81B60&amp;color=%23E67C73&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA"
-                width="250" height="400" frameborder="0" scrolling="no"></iframe>
-        -->
         <div class="events events--list">
             <div class="card card--events-list">
                 <h1 class="card-header">Upcoming Events</h1>
