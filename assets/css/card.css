@@ -65,3 +65,7 @@
     font-size: 12pt;
     font-family: RedHatText, "Red Hat Text", Overpass, Overpass, "Helvetica Neue", Arial, sans-serif;
 }
+
+.card--blog-list .card-header a {
+    text-decoration: none;
+}

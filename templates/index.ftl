@@ -43,14 +43,20 @@
                                     }
                                     h2, h3 {
                                         margin: 0;
-                                        padding: 0;
+                                        padding: 0
+                                    }
+                                    section {
+                                        margin-bottom: 1.5rem;
+                                    }
+                                    .date, pfe-datetime {
+                                        font-size: 8pt;
                                     }
                                 </style>
                                 <h2><a href="https://blog.kie.org/featured/${category.name}">${category.name?capitalize}</a></h2>
                                 <article data-repeat>
                                     <section>
                                         <header>
-                                            <h3><a href="${'$'}{link}">${'$'}{title.rendered}</a></h3>
+                                            <h3><span class="date"><pfe-datetime datetime="${'$'}{date}">${'$'}{date}</pfe-datetime> - </span><a href="${'$'}{link}">${'$'}{title.rendered}</a></h3>
                                         </header>
                                     </section>
                                 </article>
