@@ -56,7 +56,10 @@
                                 <article data-repeat>
                                     <section>
                                         <header>
-                                            <h3><span class="date"><pfe-datetime datetime="${'$'}{date}">${'$'}{date}</pfe-datetime> - </span><a href="${'$'}{link}">${'$'}{title.rendered}</a></h3>
+                                            <h3><a href="${'$'}{link}">${'$'}{title.rendered}</a></h3>
+                                            <span class="date"><pfe-datetime
+                                                        datetime="${'$'}{date}" month="short" type="local"
+                                                        day="numeric" year="numeric">${'$'}{date}</pfe-datetime></span>
                                         </header>
                                     </section>
                                 </article>
@@ -77,9 +80,7 @@
                             calendar-id="auupg99ha1n0nc4fsdjj3uhbq8@group.calendar.google.com"
                             event-count="10"
                             show-recurring
-                            style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));grid-gap: 2rem; font-size: 12pt; font-family: RedHatText,"
-                            Red Hat Text
-                    ",Overpass,Overpass,"Helvetica Neue",Arial,sans-serif;">
+                            style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));grid-gap: 2rem; font-size: 12pt; font-family: RedHatText,"Red Hat Text",Overpass,Overpass,"Helvetica Neue",Arial,sans-serif;">
                     <template>
                         <div class='event'>
                             <div class='event-summary'><a class='event-url event-title' style="text-decoration: none;color: #369;"></a></div>
