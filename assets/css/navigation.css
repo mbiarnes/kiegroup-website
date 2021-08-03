@@ -10,8 +10,7 @@ header {
 }
 
 .navigation {
-    grid-template-columns: 2rem 13rem auto;
-    /* grid-template-columns: 10% 13rem auto; /*
+    grid-template-columns: 10% 13rem auto;
     display: grid;
 }
 
@@ -21,7 +20,7 @@ header {
 
 .navigation h1 {
     display: inline-block;
-    margin: 0 -0.5rem -0.5rem 0;
+    margin: 0 -0.5rem 0 0;
     border-right: 1px solid #dedede;
     color: #475058;
     font-weight: 800;
@@ -38,7 +37,6 @@ header {
     font-weight: 800;
     color: #475058;
     text-transform: uppercase;
-    line-height: 1.0;
     text-decoration: none;
     padding: 0.2rem .54rem;
 }
@@ -66,10 +64,11 @@ header {
 
 .navigation--logo {
     grid-column-start: 2;
+    align-self: center;
 }
 
 .navigation--primary {
-    align-self: end;
+    align-self: center;
     grid-column: 3/end;
     /*height: 60%;*/
 }
