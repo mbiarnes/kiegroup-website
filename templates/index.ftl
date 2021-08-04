@@ -45,11 +45,14 @@
                                         margin: 0;
                                         padding: 0
                                     }
+                                    h3 {
+                                        line-height: 1.0;
+                                    }
                                     section {
                                         margin-bottom: 1.5rem;
                                     }
                                     .date, pfe-datetime {
-                                        font-size: 8pt;
+                                        font-size: 1.5rem;
                                     }
                                 </style>
                                 <h2><a href="https://blog.kie.org/featured/${category.name}">${category.name?capitalize}</a></h2>
