@@ -5,16 +5,22 @@
             <h1><a href="/" <#if ((content.active_menu!"kie") == "kie")>class="navigation-item--active"</#if>>KIE</a></h1>
         </div>
         <div class="navigation--primary">
-            <#-- <a href="https://blog.kie.org" <#if ((content.active_menu!"") == "blog")>class="navigation-item--active"</#if>>Blog</a> -->
-            <a href="https://kogito.kie.org/" <#if ((content.active_menu!"") == "kogito")>class="navigation-item--active"</#if>>Kogito</a>
-            <a href="https://drools.org/" <#if ((content.active_menu!"") == "drools")>class="navigation-item--active"</#if>>Drools</a>
-            <a href="https://jbpm.org/" <#if ((content.active_menu!"") == "jbpm")>class="navigation-item--active"</#if>>jBPM</a>
-            <a href="https://www.optaplanner.org/" <#if ((content.active_menu!"") == "optaplanner")>class="navigation-item--active"</#if>>OptaPlanner</a>
-            <a href="#" class="responsive-menu-button">☰</a>
-        </div>
-        <div class="navigation--secondary-spacer"></div>
-        <div class="navigation--secondary">
             <#include (((content.active_menu)!"kie") + "-submenu.ftl")>
+        </div>
+        <div class="navigation--primary-right">
+            <div class="navigation--primary-right-top">
+                <a href="https://kie.org">KIE</a>
+            </div>
+            <div class="navigation--primary-right-bottom">
+                <a href="https://blog.kie.org" <#if ((content.active_menu!"") == "blog")>class="navigation-item--active"</#if>>Blog</a>
+                <a href="https://kogito.kie.org/" <#if ((content.active_menu!"") == "kogito")>class="navigation-item--active"</#if>>Kogito</a>
+                <a href="https://drools.org/" <#if ((content.active_menu!"") == "drools")>class="navigation-item--active"</#if>>Drools</a>
+                <a href="https://jbpm.org/" <#if ((content.active_menu!"") == "jbpm")>class="navigation-item--active"</#if>>jBPM</a>
+                <a href="https://www.optaplanner.org/" <#if ((content.active_menu!"") == "optaplanner")>class="navigation-item--active"</#if>>OptaPlanner</a>
+                <a href="#" class="responsive-menu-button">☰</a>
+            </div>
+        </div>
+        <div class="navigation--secondary">
             <#-- Secondary nav depending on what is being viewed will go here -->
         </div>
     </nav>

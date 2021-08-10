@@ -10,7 +10,7 @@ header {
 }
 
 .navigation {
-    grid-template-columns: 10% 13rem auto;
+    grid-template-columns: 10% 13rem 1fr 1fr 10%;
     display: grid;
 }
 
@@ -69,8 +69,25 @@ header {
 
 .navigation--primary {
     align-self: center;
-    grid-column: 3/end;
+    grid-column: 3;
     /*height: 60%;*/
+}
+
+.navigation--primary-right {
+    grid-column: 4;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.navigation--primary-right-top {
+    align-self: center;
+}
+
+.navigation--primary-right-bottom {
+    align-self: center;
+    border-top: black solid thin;
 }
 
 .navigation--secondary, .navigation--secondary-spacer {
@@ -84,7 +101,7 @@ header {
 }
 
 .navigation--secondary {
-    grid-column: 3/end;
+    grid-column: start/end;
 }
 
 .navigation--secondary a {
