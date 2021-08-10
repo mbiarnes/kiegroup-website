@@ -26,11 +26,12 @@
         "webpack-cli": "^3.3.11"
     },
     "dependencies": {
-        "@webcomponents/webcomponentsjs": "^2.5.0",
-        "webpack": "^4.42.0",
-        "patch-package": "^6.4.7",
         "@bitovi/calendar-events-component": "~0.0.11",
+        "@webcomponents/webcomponentsjs": "^2.5.0",
         "babel-loader": "^8.0.6",
-        "file-loader": "^6.2.0"
+        "file-loader": "^6.2.0",
+        "patch-package": "^6.4.7",
+        "svg-inline-loader": "^0.8.2",
+        "webpack": "^4.42.0"
     }
 }

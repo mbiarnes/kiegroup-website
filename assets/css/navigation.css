@@ -10,7 +10,7 @@ header {
 }
 
 .navigation {
-    grid-template-columns: 10% 13rem 1fr 1fr 10%;
+    grid-template-columns: 10% 2fr 1fr 10%;
     display: grid;
 }
 
@@ -49,7 +49,7 @@ header {
     box-shadow: 0 0 0 7px #f8f8f8;
     border-radius: 100%;
     border-bottom: 2px solid #ddd;
-    background-image: url("../../static/images/kie_logo.png");
+    background-image: url("../../static/images/optaplanner_icon.svg");
     vertical-align: bottom;
     justify-self: right;
     top: 1rem;
@@ -63,18 +63,17 @@ header {
 }
 
 .navigation--logo {
-    grid-column-start: 2;
     align-self: center;
+    display: inline;
 }
 
 .navigation--primary {
     align-self: center;
-    grid-column: 3;
-    /*height: 60%;*/
+    display: inline-block;
 }
 
 .navigation--primary-right {
-    grid-column: 4;
+    grid-column: 3;
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
@@ -88,6 +87,10 @@ header {
 .navigation--primary-right-bottom {
     align-self: center;
     border-top: black solid thin;
+}
+
+.navigation--primary-left {
+    grid-column-start: 2;
 }
 
 .navigation--secondary, .navigation--secondary-spacer {

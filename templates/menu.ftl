@@ -1,11 +1,13 @@
 <header class="header">
     <nav class="navigation">
-        <div class="navigation--logo">
-            <div class="logo" aria-label="logo"></div>
-            <h1><a href="/" <#if ((content.active_menu!"kie") == "kie")>class="navigation-item--active"</#if>>KIE</a></h1>
-        </div>
-        <div class="navigation--primary">
-            <#include (((content.active_menu)!"kie") + "-submenu.ftl")>
+        <div class="navigation--primary-left">
+            <div class="navigation--logo">
+                <div class="logo" aria-label="logo"></div>
+                <h1><a href="/" <#if ((content.active_menu!"kie") == "kie")>class="navigation-item--active"</#if>>OPTAPLANNER</a></h1>
+            </div>
+            <div class="navigation--primary">
+                <#include (((content.active_menu)!"kie") + "-submenu.ftl")>
+            </div>
         </div>
         <div class="navigation--primary-right">
             <div class="navigation--primary-right-top">
