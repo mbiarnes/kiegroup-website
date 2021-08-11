@@ -5,7 +5,7 @@ footer nav .row {
 
 /* Wrapper ends */ /* NAV Starts */
 header {
-    background-color: #f8f8f8;
+    background-color: var(--primary-nav-color);
     box-shadow: 0 1px 5px 5px var(--secondary-color);
 }
 
@@ -29,16 +29,94 @@ header {
 }
 
 .navigation a,
+.navigation button,
 .navigation .logo {
     display: inline-block;
 }
 
-.navigation a {
+.navigation a,
+.navigation button {
     font-weight: 800;
     color: #475058;
     text-transform: uppercase;
     text-decoration: none;
     padding: 0.2rem .54rem;
+}
+
+.navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+}
+
+.navigation ul li {
+    padding: 0;
+    margin: 0 0.5rem;
+}
+
+.navigation--primary > ul {
+    grid-auto-flow: column;
+}
+
+.navigation--primary > ul > li {
+    margin: 0 0.5rem;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown:hover .dropdown--menu,
+.dropdown:focus-within .dropdown--menu {
+    opacity: 1;
+    transform: rotateX(0) translateX(-50%);
+    visibility: visible;
+}
+
+.dropdown--menu {
+    background-color: var(--primary-nav-color);
+    border-radius: 4px;
+    box-shadow: 0 0.15em 0.25em rgba(0, 0, 0, 0.25);
+    padding: 0.5em 0;
+    min-width: 15ch;
+    position: absolute;
+    top: calc(100% - 0.25rem);
+    left: 50%;
+    z-index: 100;
+    transform: rotateX(-90deg) translateX(-50%);
+    transform-origin: top center;
+    opacity: 0.3;
+    transition: 280ms all 120ms ease-out;
+    visibility: hidden;
+}
+
+.dropdown .dropdown--menu a {
+    display: block;
+    padding: 0.5em;
+}
+
+.dropdown--title {
+    background-color: transparent;
+    border: none;
+    font-weight: 800;
+    color: #475058;
+    text-transform: uppercase;
+    display: inline-flex;
+    align-items: center;
+}
+
+.dropdown--title:after {
+    content: "";
+    border: 0.5rem solid transparent;
+    margin-left: 0.25em;
+    transform: translateY(0.15em);
+    border-top-color: rgba(71, 80, 88, 0.45)
+}
+
+.navigation--primary > ul > li > a,
+.navigation--primary > ul > li .dropdown--title {
+    padding: 1rem 0.5rem
 }
 
 .navigation .logo {
@@ -48,11 +126,30 @@ header {
     box-shadow: 0 0 0 7px #f8f8f8;
     border-radius: 100%;
     border-bottom: 2px solid #ddd;
-    background-image: url("../../static/images/optaplanner_icon.svg");
     vertical-align: bottom;
     justify-self: right;
     top: 1rem;
     z-index: 2;
+}
+
+.logo.optaplanner {
+    background-image: url("../../static/images/optaplanner_icon.svg");
+}
+
+.logo.kie {
+    background-image: url("../../static/images/kie_logo.png");
+}
+
+.logo.kogito {
+    background-image: url("../../static/images/kogito_icon.svg");
+}
+
+.logo.drools {
+    background-image: url("../../static/images/drools_icon.svg");
+}
+
+.logo.jbpm {
+    background-image: url("../../static/images/jbpm_icon.svg");
 }
 
 .navigation .responsive-menu-button {

@@ -1,24 +1,25 @@
 <header class="header">
-    <nav class="navigation">
+    <nav class="navigation" aria-label="Main Navigation">
         <div class="navigation--primary-left">
             <div class="navigation--logo">
-                <div class="logo" aria-label="logo"></div>
-                <h1><a href="/" <#if ((content.active_menu!"kie") == "kie")>class="navigation-item--active"</#if>>OPTAPLANNER</a></h1>
+                <div class="logo ${(content.active_menu!"kie")}" aria-label="logo"></div>
+                <h1><a href="/" <#if ((content.active_menu!"kie") == "kie")>class="navigation-item--active"</#if> aria-label="Home"></a></h1>
             </div>
             <div class="navigation--primary">
                 <#include (((content.active_menu)!"kie") + "-submenu.ftl")>
+<#--                <#include "optaplanner-submenu.ftl">-->
             </div>
         </div>
         <div class="navigation--primary-right">
             <div class="navigation--primary-right-top">
-                <a href="https://kie.org">KIE</a>
+                <a href="https://kie.org" aria-label="KIE Home" >KIE</a>
             </div>
             <div class="navigation--primary-right-bottom">
-                <a href="https://blog.kie.org" <#if ((content.active_menu!"") == "blog")>class="navigation-item--active"</#if>>Blog</a>
-                <a href="https://kogito.kie.org/" <#if ((content.active_menu!"") == "kogito")>class="navigation-item--active"</#if>>Kogito</a>
-                <a href="https://drools.org/" <#if ((content.active_menu!"") == "drools")>class="navigation-item--active"</#if>>Drools</a>
-                <a href="https://jbpm.org/" <#if ((content.active_menu!"") == "jbpm")>class="navigation-item--active"</#if>>jBPM</a>
-                <a href="https://www.optaplanner.org/" <#if ((content.active_menu!"") == "optaplanner")>class="navigation-item--active"</#if>>OptaPlanner</a>
+                <a aria-label="Blog" href="https://blog.kie.org" <#if ((content.active_menu!"") == "blog")>class="navigation-item--active"</#if>>Blog</a>
+                <a aria-label="Kogito" href="https://kogito.kie.org/" <#if ((content.active_menu!"") == "kogito")>class="navigation-item--active"</#if>>Kogito</a>
+                <a aria-label="Drools" href="https://drools.org/" <#if ((content.active_menu!"") == "drools")>class="navigation-item--active"</#if>>Drools</a>
+                <a aria-label="jBPM" href="https://jbpm.org/" <#if ((content.active_menu!"") == "jbpm")>class="navigation-item--active"</#if>>jBPM</a>
+                <a aria-label="Optaplanner" href="https://www.optaplanner.org/" <#if ((content.active_menu!"") == "optaplanner")>class="navigation-item--active"</#if>>OptaPlanner</a>
                 <a href="#" class="responsive-menu-button">☰</a>
             </div>
         </div>
