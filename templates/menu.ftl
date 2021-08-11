@@ -3,7 +3,7 @@
         <div class="navigation--primary-left">
             <div class="navigation--logo">
                 <div class="logo ${(content.active_menu!"kie")}" aria-label="logo"></div>
-                <h1><a href="/" <#if ((content.active_menu!"kie") == "kie")>class="navigation-item--active"</#if> aria-label="Home"></a></h1>
+                <h1><a href="/" <#if ((content.active_menu!"kie") == "kie")>class="navigation-item--active"</#if> aria-label="Home">${(content.active_menu!"kie")}</a></h1>
             </div>
             <div class="navigation--primary">
                 <#include (((content.active_menu)!"kie") + "-submenu.ftl")>
