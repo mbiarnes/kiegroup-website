@@ -7,6 +7,16 @@
     --primary-nav-color: #f8f8f8;
 }
 
+header.header nav.navigation,
+header.header nav.navigation a {
+    font-size: 12pt;
+}
+
+header.header nav.navigation h1,
+header.header nav.navigation h1 a {
+    font-size: 18pt;
+}
+
 .navigation--primary,
 footer nav .row {
     padding: 0;
@@ -19,7 +29,7 @@ header {
 }
 
 .navigation {
-    grid-template-columns: 10% 2fr 1fr 10%;
+    grid-template-columns: 10% 2fr auto 10%;
     display: grid;
 }
 
@@ -123,6 +133,11 @@ header {
     border-top-color: rgba(71, 80, 88, 0.45)
 }
 
+.navigation--primary-right .dropdown--title:after {
+    position: relative;
+    top: .75rem;
+}
+
 .navigation--primary > ul > li > a,
 .navigation--primary > ul > li .dropdown--title {
     padding: 1rem 0.5rem
@@ -181,7 +196,7 @@ header {
     grid-column: 3;
     display: flex;
     align-items: flex-end;
-    justify-content: flex-end;
+    justify-content: center;
     flex-direction: column;
 }
 
@@ -328,25 +343,30 @@ footer {
     padding: 3rem 0;
 }
 
-footer .row .column {
+footer .row .column,
+footer .r .column
+{
     text-align: left;
-    padding: 0;
+    padding: 0 0 0 1rem;
 }
 
 footer .row .column a,
+footer .r .column a,
+footer .r .column span,
 footer .row .column span {
     color: #ddd;
     display: inline-block;
     vertical-align: middle;
 }
 
+footer .r:nth-child(2) span,
 footer .row:nth-child(2) span {
     padding-top: 1rem;
     color: #777;
 }
 
-footer .row .column a.logo {
-    background: url(../../static/images/redHatLogo.png) no-repeat;
+footer a.logo {
+    background: url(images/redHatLogo.png) no-repeat;
     background-size: 144px 34px;
     height: 34px;
     top: auto;

@@ -2,26 +2,31 @@
     <nav class="navigation" aria-label="Main Navigation">
         <div class="navigation--primary-left">
             <div class="navigation--logo">
-                <div class="logo ${(content.active_menu!"kie")}" aria-label="logo"></div>
-                <h1><a href="/" <#if ((content.active_menu!"kie") == "kie")>class="navigation-item--active"</#if> aria-label="Home">${(content.active_menu!"kie")}</a></h1>
+                <div class="logo ${(content.active_menu!config.active_menu!"kie")}" aria-label="logo"></div>
+                <h1><a href="/"
+                       <#if ((content.active_menu!config.active_menu!"kie") == "kie")>class="navigation-item--active"</#if>
+                       aria-label="Home">${(content.active_menu!config.active_menu!"kie")}</a></h1>
             </div>
             <div class="navigation--primary">
-                <#include (((content.active_menu)!"kie") + "-submenu.ftl")>
-<#--                <#include "optaplanner-submenu.ftl">-->
+                <#include (((content.active_menu)!config.active_menu!"kie") + "-submenu.ftl")>
             </div>
         </div>
         <div class="navigation--primary-right">
-            <div class="navigation--primary-right-top">
-                <a href="https://kie.org" aria-label="KIE Home" >KIE</a>
-            </div>
-            <div class="navigation--primary-right-bottom">
-                <a aria-label="Blog" href="https://blog.kie.org" <#if ((content.active_menu!"") == "blog")>class="navigation-item--active"</#if>>Blog</a>
-                <a aria-label="Kogito" href="https://kogito.kie.org/" <#if ((content.active_menu!"") == "kogito")>class="navigation-item--active"</#if>>Kogito</a>
-                <a aria-label="Drools" href="https://drools.org/" <#if ((content.active_menu!"") == "drools")>class="navigation-item--active"</#if>>Drools</a>
-                <a aria-label="jBPM" href="https://jbpm.org/" <#if ((content.active_menu!"") == "jbpm")>class="navigation-item--active"</#if>>jBPM</a>
-                <a aria-label="Optaplanner" href="https://www.optaplanner.org/" <#if ((content.active_menu!"") == "optaplanner")>class="navigation-item--active"</#if>>OptaPlanner</a>
-                <a href="#" class="responsive-menu-button">☰</a>
-            </div>
+            <ul>
+                <li class="dropdown">
+                    <button type="button" class="dropdown--title" aria-expanded="false" aria-controls="kie-dropdown">
+                        KIE
+                    </button>
+                    <ul class="dropdown--menu" id="kie-dropdown">
+                        <li><a aria-label="KIE Home" href="https://kie.org">KIE Home</a></li>
+                        <li><a aria-label="Blog" href="https://blog.kie.org">Blog</a></li>
+                        <li><a aria-label="Kogito" href="https://kogito.kie.org/">Kogito</a></li>
+                        <li><a aria-label="Drools" href="https://drools.org/">Drools</a></li>
+                        <li><a aria-label="jBPM" href="https://jbpm.org/">jBPM</a></li>
+                        <li><a aria-label="Optaplanner" href="https://www.optaplanner.org/">OptaPlanner</a></li>
+                    </ul>
+                </li>
+            </ul>
         </div>
         <div class="navigation--secondary">
             <#-- Secondary nav depending on what is being viewed will go here -->

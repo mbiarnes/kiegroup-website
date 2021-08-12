@@ -1,5 +1,5 @@
 <footer class="footer">
-    <div class="row">
+    <div class="r">
         <div class="column">
             <span>Development is sponsored by</span>
             <a class="logo" href="https://www.redhat.com/"></a>
@@ -9,7 +9,7 @@
             <a href="http://www.redhat.com/legal/privacy_statement.html">Terms and Conditions</a>
         </div>
     </div>
-    <div class="row">
+    <div class="r">
         <div class="column">
             <span>© Copyright 2006 - ${ .now?string.yyyy }, Red Hat, Inc. or third-party contributors</span>
         </div>
