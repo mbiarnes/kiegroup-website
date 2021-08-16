@@ -31,27 +31,25 @@
         <div class="navigation--secondary">
             <#-- Secondary nav depending on what is being viewed will go here -->
         </div>
+        <button type="button" class="responsive-menu-button open-button" aria-expanded="false">&#9776;</button>
     </nav>
 </header>
-<#--
 <div class="navigation--responsive">
     <ul>
         <li>
             <a href="#" class="responsive-menu-button close-button">✕</a>
+            <#include (((content.active_menu)!config.active_menu!"kie") + "-submenu.ftl")>
             <h4>
                 KIE websites
             </h4>
             <ul>
-                <li><a href="https://blog.kie.org">Blog</a></li>
-                <li><a href="/kogito">Kogito</a></li>
-                <li><a href="/drools">Drools</a></li>
-                <li><a href="/jbpm">JBPM</a></li>
-                <li><a href="/optaplanner">Optaplanner</a></li>
-            </ul>
-            <ul>
-                Secondary nav depending on what is being viewed will go here
+                <li><a aria-label="KIE Home" href="https://kie.org">KIE Home</a></li>
+                <li><a aria-label="Blog" href="https://blog.kie.org">Blog</a></li>
+                <li><a aria-label="Kogito" href="https://kogito.kie.org/">Kogito</a></li>
+                <li><a aria-label="Drools" href="https://drools.org/">Drools</a></li>
+                <li><a aria-label="jBPM" href="https://jbpm.org/">jBPM</a></li>
+                <li><a aria-label="Optaplanner" href="https://www.optaplanner.org/">OptaPlanner</a></li>
             </ul>
         </li>
     </ul>
 </div>
--->
