@@ -383,7 +383,7 @@ footer .row:nth-child(2) span {
 }
 
 footer a.logo {
-    background: url(images/redHatLogo.png) no-repeat;
+    background: url(../../static/images/redHatLogo.png) no-repeat;
     background-size: 144px 34px;
     height: 34px;
     top: auto;
