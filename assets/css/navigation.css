@@ -340,6 +340,7 @@ header {
 
 .responsive-menu-opened .navigation--responsive {
     right: 0;
+    overflow-y: scroll;
 }
 
 .footer .row .column {
