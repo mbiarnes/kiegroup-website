@@ -10,9 +10,23 @@
 
     header.header nav.navigation,
     header.header nav.navigation a {
-        font-size: 12pt;
+        font-size: 11pt;
     }
 
+    header.header nav,
+    header.header nav a,
+    header.header nav a:link {
+        line-height: unset;
+        vertical-align: unset;
+        height: unset;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    header.header nav a:hover,
+    header.header nav button:focus,
+    header.header nav button:hover {
+        background: unset;
+    }
     header.header nav.navigation h1,
     header.header nav.navigation h1 a {
         font-size: 18pt;
@@ -30,7 +44,7 @@
     }
 
     .navigation {
-        grid-template-columns: 10% 2fr auto 10%;
+        grid-template-columns: 0 2fr auto 0;
         display: grid;
     }
 
@@ -41,7 +55,6 @@
     .navigation h1 {
         display: inline-block;
         margin: 0 -0.5rem 0 0;
-        border-right: 1px solid #dedede;
         color: #475058;
         font-weight: 800;
         font-family: "Overpass", sans-serif;
@@ -60,7 +73,8 @@
         color: #475058;
         text-transform: uppercase;
         text-decoration: none;
-        padding: 0.2rem .54rem;
+        padding: 0.2rem .2rem;
+        background: none;
     }
 
     .navigation ul {
@@ -104,30 +118,11 @@
         justify-self: right;
         top: 1rem;
         z-index: 2;
+        margin: unset;
+        position: inherit;
     }
-
-    .logo.optaplanner {
-        background-image: url("/images/optaplanner_icon.svg");
-    }
-
     .logo.kie {
         background-image: url("/images/kie_logo.png");
-    }
-
-    .logo.kogito {
-        background-image: url("/images/kogito_icon.svg");
-    }
-
-    .logo.drools {
-        background-image: url("/images/drools_icon.svg");
-    }
-
-    .logo.jbpm {
-        background-image: url("/images/jbpm_icon.svg");
-    }
-
-    .navigation .responsive-menu-button {
-
     }
 
     .navigation--logo {
@@ -186,29 +181,23 @@
         display: inline;
     }
 
-    .navigation-item--active {
+    .navigation-item--active,
+    .navigation-item--active a span {
         text-decoration: underline;
     }
 
     /* NAV Ends */ /* Responsive Menu Starts */
-    @media screen and (max-width: 990px) {
-        .navigation--primary, .navigation--primary-right {
-            visibility: hidden;
-            transform: rotateX(-90deg) translateX(-50%);
-            opacity: 0.3;
-            display: none;
-        }
-
-        .responsive-menu-button {
-            visibility: visible;
-            opacity: 1;
-            position: absolute;
-            right: 0;
+    @media screen and (min-width: 576px) {
+        .navigation h1 {
             border: none;
         }
     }
 
-    @media screen and (min-width: 991px) {
+    @media screen and (min-width: 982px) {
+        .navigation {
+            grid-template-columns: 2% 2fr auto 2%;
+        }
+
         .responsive-menu-button {
             visibility: hidden;
             opacity: 0.3;
@@ -234,7 +223,6 @@
             min-width: 15ch;
             position: absolute;
             top: calc(100% - 0.25rem);
-            left: 50%;
             z-index: 100;
             transform: rotateX(-90deg) translateX(-50%);
             transform-origin: top center;
@@ -264,6 +252,29 @@
             margin-left: 0.25em;
             transform: translateY(0.15em);
             border-top-color: rgba(71, 80, 88, 0.45)
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        .navigation h1 {
+            border-right: 1px solid #dedede;
+        }
+    }
+
+    @media screen and (max-width: 982px) {
+        .navigation--primary, .navigation--primary-right {
+            visibility: hidden;
+            transform: rotateX(-90deg) translateX(-50%);
+            opacity: 0.3;
+            display: none;
+        }
+
+        .responsive-menu-button {
+            visibility: visible;
+            opacity: 1;
+            position: absolute;
+            right: 0;
+            border: none;
         }
     }
 
