@@ -255,12 +255,6 @@
         }
     }
 
-    @media screen and (min-width: 1200px) {
-        .navigation h1 {
-            border-right: 1px solid #dedede;
-        }
-    }
-
     @media screen and (max-width: 982px) {
         .navigation--primary, .navigation--primary-right {
             visibility: hidden;
