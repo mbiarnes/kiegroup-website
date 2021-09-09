@@ -10,11 +10,14 @@
 }
 
 .container--main-video {
-    grid-template-columns: repeat(auto-fill, minmax(250px, 560px));
-    justify-content: center;
-    max-width: unset;
+    display: flex;
+    place-content: center;
+    max-height: max-content;
 }
-
+.container--main-video ~ .redhat-footer {
+    position: absolute;
+    bottom: 0;
+}
 .container--full {
     grid-column: 1/end;
 }

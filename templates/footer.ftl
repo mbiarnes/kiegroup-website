@@ -1,6 +1,7 @@
     <style>
         .redhat-footer.content {
             padding: 0 13rem;
+            width: 100%;
         }
         .redhat-footer .grid-wrapper {
             padding: .5rem 0;
