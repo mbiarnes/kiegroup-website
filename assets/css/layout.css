@@ -27,6 +27,13 @@
     grid-template-columns: repeat(2, minmax(160px, 1fr));
     grid-gap: 2rem;
     margin-bottom: 3rem;
+    background: #f7f7f7;
+    padding: 2rem;
+}
+
+.container--front-video a {
+    color: #369;
+    text-decoration: none;
 }
 
 

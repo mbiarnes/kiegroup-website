@@ -17,10 +17,8 @@
     header.header nav a,
     header.header nav a:link {
         line-height: unset;
-        vertical-align: unset;
-        height: unset;
+        vertical-align: middle;
         text-decoration: none;
-        text-transform: uppercase;
     }
     header.header nav a:hover,
     header.header nav button:focus,
@@ -40,7 +38,8 @@
     /* Wrapper ends */ /* NAV Starts */
     header {
         background-color: var(--primary-nav-color);
-        box-shadow: 0 1px 5px 5px var(--secondary-color);
+        box-shadow: 0 0 10px 2px var(--secondary-color);
+        border-bottom: 1px solid #d8d8d8;
     }
 
     .navigation {
@@ -54,11 +53,11 @@
 
     .navigation h1 {
         display: inline-block;
-        margin: 0 -0.5rem 0 0;
+        margin: 0 0.5rem;
         color: #475058;
-        font-weight: 800;
+        font-weight: 600;
         font-family: "Overpass", sans-serif;
-        letter-spacing: -0.1rem;
+        letter-spacing: -0.05rem;
     }
 
     .navigation a,
@@ -69,9 +68,7 @@
 
     .navigation a,
     .navigation button {
-        font-weight: 800;
         color: #475058;
-        text-transform: uppercase;
         text-decoration: none;
         padding: 0.2rem .2rem;
         background: none;
@@ -97,6 +94,47 @@
         margin: 0 0.5rem;
     }
 
+    /* Responsive primary navigation */
+    @media screen and (max-width: 750px) {
+        header.header .navigation--primary > ul > li {
+            margin: 0 0.2rem;
+        }
+    }
+    @media screen and (max-width: 700px) {
+        header.header .navigation--primary > ul > li > a {
+            font-size: 10pt;
+            padding: 1rem 0.3rem 1.2rem;
+        }
+        header.header .navigation--primary > ul > li {
+            margin: 0 0.1rem;
+        }
+    }
+    @media screen and (max-width: 650px) {
+        header.header nav .navigation--logo h1 {
+            margin: 0;
+        }
+        header.header nav .navigation--logo h1 a {
+            font-size: 13pt;
+        }
+        header.header .navigation--primary > ul > li > a {
+            font-size: 9pt;
+            padding: 1rem 0.1rem 1.1rem;
+        }
+    }
+    @media screen and (max-width: 500px) {
+        header.header nav .navigation--logo h1 {
+            display: none;
+        }
+        header.header .navigation .logo {
+            width: 50px;
+            height: 50px;
+        }
+        header.header .navigation button {
+            padding: 18px;
+            margin: 0;
+        }
+    }
+
     .navigation--primary-right .dropdown--title:after {
         position: relative;
         top: .75rem;
@@ -104,7 +142,7 @@
 
     .navigation--primary > ul > li > a,
     .navigation--primary > ul > li .dropdown--title {
-        padding: 1rem 0.5rem
+        padding: 1rem 0.3rem
     }
 
     .navigation .logo {
@@ -256,7 +294,7 @@
     }
 
     @media screen and (max-width: 982px) {
-        .navigation--primary, .navigation--primary-right {
+        .navigation--primary-right {
             visibility: hidden;
             transform: rotateX(-90deg) translateX(-50%);
             opacity: 0.3;
@@ -269,6 +307,7 @@
             position: absolute;
             right: 0;
             border: none;
+            margin: 20px;
         }
     }
 
@@ -356,28 +395,21 @@
                 <div class="logo ${(content.active_menu!config.active_menu!"kie")}" aria-label="logo"></div>
                 <h1><a href="/"
                        <#if ((content.active_menu!config.active_menu!"kie") == "kie")>class="navigation-item--active"</#if>
-                       aria-label="Home">${(content.active_menu!config.active_menu!"kie")}</a></h1>
+                       aria-label="Home">${(content.active_menu!config.active_menu!"KIE")}</a></h1>
             </div>
             <div class="navigation--primary">
                 <#include (((content.active_menu)!config.active_menu!"kie") + "-submenu.ftl")>
             </div>
         </div>
         <div class="navigation--primary-right">
-            <ul>
-                <li class="dropdown">
-                    <button type="button" class="dropdown--title" aria-expanded="false" aria-controls="kie-dropdown">
-                        KIE
-                    </button>
-                    <ul class="dropdown--menu" id="kie-dropdown">
-                        <li><a aria-label="KIE Home" href="https://kie.org">KIE Home</a></li>
-                        <li><a aria-label="Blog" href="https://blog.kie.org">Blog</a></li>
-                        <li><a aria-label="Kogito" href="https://kogito.kie.org/">Kogito</a></li>
-                        <li><a aria-label="Drools" href="https://drools.org/">Drools</a></li>
-                        <li><a aria-label="jBPM" href="https://jbpm.org/">jBPM</a></li>
-                        <li><a aria-label="Optaplanner" href="https://www.optaplanner.org/">OptaPlanner</a></li>
-                    </ul>
-                </li>
-            </ul>
+            <div class="navigation--primary">
+                <ul>
+                      <li><a aria-label="Kogito" href="https://kogito.kie.org/">Kogito</a></li>
+                      <li><a aria-label="Drools" href="https://drools.org/">Drools</a></li>
+                      <li><a aria-label="jBPM" href="https://jbpm.org/">jBPM</a></li>
+                      <li><a aria-label="Optaplanner" href="https://www.optaplanner.org/">OptaPlanner</a></li>
+                </ul>
+            </div>
         </div>
         <div class="navigation--secondary">
             <#-- Secondary nav depending on what is being viewed will go here -->
@@ -389,13 +421,14 @@
     <ul>
         <li>
             <a href="#" class="responsive-menu-button close-button">✕</a>
+            <h3>
+                KIE
+            </h3>
             <#include (((content.active_menu)!config.active_menu!"kie") + "-submenu.ftl")>
-            <h4>
-                KIE websites
-            </h4>
+            <h3>
+                Projects
+            </h3>
             <ul>
-                <li><a aria-label="KIE Home" href="https://kie.org">KIE Home</a></li>
-                <li><a aria-label="Blog" href="https://blog.kie.org">Blog</a></li>
                 <li><a aria-label="Kogito" href="https://kogito.kie.org/">Kogito</a></li>
                 <li><a aria-label="Drools" href="https://drools.org/">Drools</a></li>
                 <li><a aria-label="jBPM" href="https://jbpm.org/">jBPM</a></li>

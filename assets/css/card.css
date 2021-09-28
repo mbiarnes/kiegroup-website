@@ -60,12 +60,33 @@
 
 .card--blog-list .card--body {
     display: grid;
-    grid-template-columns: repeat(2, minmax(130px, 1fr));
+    grid-template-columns: repeat(1, minmax(130px, 1fr));
+    align-items: center;
     grid-gap: 2rem;
-    font-size: 12pt;
+    font-size: 16pt;
+    zoom: 0.7;
     font-family: RedHatText, "Red Hat Text", Overpass, Overpass, "Helvetica Neue", Arial, sans-serif;
 }
 
 .card--blog-list .card-header a {
+    color: #475058;
     text-decoration: none;
+}
+
+@media (min-width: 950px) {
+  .card--blog-list .card--body {
+    grid-template-columns: repeat(2, minmax(130px, 1fr));
+  }
+}
+
+@media (min-width: 1250px) {
+  .card--blog-list .card--body {
+    grid-template-columns: repeat(3, minmax(130px, 1fr));
+  }
+}
+
+@media (min-width: 2000px) {
+  .card--blog-list .card--body {
+    grid-template-columns: repeat(4, minmax(130px, 1fr));
+  }
 }
