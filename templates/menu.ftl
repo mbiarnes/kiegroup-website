@@ -10,7 +10,7 @@
 
     header.header nav.navigation,
     header.header nav.navigation a {
-        font-size: 11pt;
+        font-size: 16px;
     }
 
     header.header nav,
@@ -19,15 +19,18 @@
         line-height: unset;
         vertical-align: middle;
         text-decoration: none;
+        text-transform: capitalize;
     }
     header.header nav a:hover,
     header.header nav button:focus,
     header.header nav button:hover {
         background: unset;
+        text-decoration: underline;
     }
     header.header nav.navigation h1,
     header.header nav.navigation h1 a {
         font-size: 18pt;
+        text-transform: uppercase;
     }
 
     .navigation--primary,
@@ -94,6 +97,43 @@
         margin: 0 0.5rem;
     }
 
+    .kie-tooltip:before {
+        display: none;
+        max-width: 12rem;
+        background-color: var(--secondary-color);
+        color: var(--primary-nav-color);
+        z-index: 1;
+        margin-top: 2.5rem;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        content: attr(title);
+        position: absolute;
+    }
+
+    .kie-tooltip:after {
+        content: "";
+        position:absolute;
+        display: none;
+        top: 3.5rem;
+        transform: translateY(-75%) translateX(50%);
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-bottom: 5px solid var(--secondary-color);
+    }
+
+    .kie-tooltip:hover:after,
+    .kie-tooltip:focus:after,
+    .kie-tooltip:focus-visible:after {
+        display: block;
+    }
+
+    .kie-tooltip:hover:before,
+    .kie-tooltip:focus:before,
+    .kie-tooltip:focus-visible:before {
+        display: block;
+    }
+
     /* Responsive primary navigation */
     @media screen and (max-width: 750px) {
         header.header .navigation--primary > ul > li {
@@ -102,7 +142,6 @@
     }
     @media screen and (max-width: 700px) {
         header.header .navigation--primary > ul > li > a {
-            font-size: 10pt;
             padding: 1rem 0.3rem 1.2rem;
         }
         header.header .navigation--primary > ul > li {
@@ -114,10 +153,8 @@
             margin: 0;
         }
         header.header nav .navigation--logo h1 a {
-            font-size: 13pt;
         }
         header.header .navigation--primary > ul > li > a {
-            font-size: 9pt;
             padding: 1rem 0.1rem 1.1rem;
         }
     }
@@ -130,7 +167,7 @@
             height: 50px;
         }
         header.header .navigation button {
-            padding: 18px;
+            padding: 1rem;
             margin: 0;
         }
     }
@@ -404,10 +441,22 @@
         <div class="navigation--primary-right">
             <div class="navigation--primary">
                 <ul>
-                      <li><a aria-label="Kogito" href="https://kogito.kie.org/">Kogito</a></li>
-                      <li><a aria-label="Drools" href="https://drools.org/">Drools</a></li>
-                      <li><a aria-label="jBPM" href="https://jbpm.org/">jBPM</a></li>
-                      <li><a aria-label="Optaplanner" href="https://www.optaplanner.org/">OptaPlanner</a></li>
+                      <li>
+                          <a aria-label="Kogito" href="https://kogito.kie.org/"
+                             title="Cloud-native business automation" class="kie-tooltip">Kogito</a>
+                      </li>
+                      <li>
+                          <a aria-label="Drools" href="https://drools.org/"
+                             class="kie-tooltip" title="Business rule management">Drools</a>
+                      </li>
+                      <li>
+                          <a aria-label="jBPM" href="https://jbpm.org/"
+                             class="kie-tooltip" title="Business process management">jBPM</a>
+                      </li>
+                      <li>
+                          <a aria-label="Optaplanner" href="https://www.optaplanner.org/"
+                             class="kie-tooltip" title="Optimizing constraint solver">OptaPlanner</a>
+                      </li>
                 </ul>
             </div>
         </div>
@@ -422,11 +471,7 @@
         <li>
             <a href="#" class="responsive-menu-button close-button">✕</a>
             <h3>
-                KIE
-            </h3>
-            <#include (((content.active_menu)!config.active_menu!"kie") + "-submenu.ftl")>
-            <h3>
-                Projects
+                KIE Projects
             </h3>
             <ul>
                 <li><a aria-label="Kogito" href="https://kogito.kie.org/">Kogito</a></li>
