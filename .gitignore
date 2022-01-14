@@ -61,7 +61,7 @@ fabric.properties
 
 *.iml
 modules.xml
-.idea/misc.xml
+.idea/
 *.ipr
 
 ### Vim ###
@@ -97,3 +97,6 @@ local.properties
 .settings/
 .loadpath
 .recommenders
+
+# Directory of Jenkinsfile for publishing web
+!.ci
