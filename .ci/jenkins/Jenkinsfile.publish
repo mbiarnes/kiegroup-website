@@ -1,0 +1,97 @@
+@Library('jenkins-pipeline-shared-libraries')_
+import org.kie.jenkins.MavenCommand
+
+AGENT_LABEL="kie-rhel7 && kie-mem4g"
+MVN_TOOL="kie-maven-3.8.1"
+JDK_TOOL="kie-jdk11"
+REPO="kiegroup-website"
+ORGANIZATION="kiegroup"
+BASE_BRANCH="main"
+MAIL_RECIPIENT="general.cefaf7f06172f5bff51264862b69d642.show-sender@streams.zulipchat.com"
+
+pipeline {
+    agent {
+        label "$AGENT_LABEL"
+    }
+    options{
+        timestamps()
+    }
+    tools {
+        maven "$MVN_TOOL"
+        jdk "$JDK_TOOL"
+    }
+    stages {
+        stage('CleanWorkspace') {
+            steps {
+                cleanWs()
+            }
+        }
+        stage('clone kiegroup-website') {
+            steps {
+                script {
+                    checkoutStartkiegroupWeb()
+                }
+            }
+        }
+        stage('Front end compilation') {
+            steps {
+                dir("${REPO}") {
+                    sh 'echo ${NODE_EXTRA_CA_CERTS}'
+                    sh 'npx @kie/lock-treatment-tool --registry=${NPM_REGISTRY_URL} && yarn install --registry=${NPM_REGISTRY_URL} && yarn build:webpack'
+                }
+            }
+        }
+        stage('Build website'){
+            steps{
+                dir("${REPO}"){
+                   sh 'mvn clean generate-resources'
+                }
+            }
+        }
+        stage('zip website'){
+            steps{
+                dir("${REPO}"){
+                    sh 'tar -cvzf kiegroup-website.tar -C target/website/ .'
+                    archiveArtifacts '*.tar'
+                }
+            }
+        }
+        stage('publish kiegroup-website to filemgmt.jboss.org') {
+            steps {
+                dir("${REPO}") {
+                    sshagent(["kiegroup-filemgmt"]) {
+                        sh './build/rsync_website.sh'
+                    }
+                }
+            }
+        }
+    }
+    post {
+        failure {
+            emailext to: "${MAIL_RECIPIENT}",
+            subject: 'status of kiegroup-website automatic publishing',
+            body: ' The status of Jenkins CI job for automatic publishing of the kiegroup-website #${BUILD_NUMBER} was: FAILURE \n' +
+            'because of ${BUILD_URL}consoleText \n' +
+            '(IMPORTANT: For visiting the links you need to have access to Red Hat VPN)'
+            cleanWs()
+        }
+        fixed {
+            emailext to: "${MAIL_RECIPIENT}",
+            subject: 'status of kiegroup-website automatic publishing',
+            body: 'The Jenkins CI job of automatic publishing of the kiegroup-website #${BUILD_NUMBER} was fixed'
+            cleanWs()
+        }
+        success {
+            emailext to: "${MAIL_RECIPIENT}",
+            subject: 'status of kiegroup-website automatic publishing',
+            body: 'The status of Jenkins CI job for automatic publishing of the kiegroup-website #${BUILD_NUMBER} was: SUCCESSFUL'
+            cleanWs()
+        }
+    }
+}
+
+void checkoutStartkiegroupWeb() {
+    dir(REPO) {
+        checkout(githubscm.resolveRepository(REPO, ORGANIZATION, BASE_BRANCH, false))
+    }
+}
