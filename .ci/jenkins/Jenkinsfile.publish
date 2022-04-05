@@ -56,7 +56,7 @@ pipeline {
                 }
             }
         }
-        stage('publish kiegroup-website to filemgmt.jboss.org') {
+        stage('publish kiegroup-website to filemgmt-prod-sync.jboss.org') {
             steps {
                 dir("${REPO}") {
                     sshagent(["kiegroup-filemgmt"]) {
